@@ -1,45 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "** This Template is available for use, but is also under construction and may be improved over time**",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#what-is-a-research-compendium",
-    "href": "index.html#what-is-a-research-compendium",
-    "title": "Home",
-    "section": "What is a Research Compendium?",
-    "text": "What is a Research Compendium?\nA Research Compendium serves as both a ‘home’ for all the digital components of a research project as well as a means of managing, updating, and sharing this information. We want to create this collection so that reproducing the results is straightforward.\nBecause PAM data is naturally very large data– we do NOT want to save our raw acoustic data here. We do recommend that your research compendium provide information on accessing this raw data. This is valuable for others, and for Future You.\nThis research compendium is set up to create an HTML output (not necessarily a word doc or pdf).",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#how-to-use-this-template",
-    "href": "index.html#how-to-use-this-template",
-    "title": "Home",
-    "section": "How To Use This Template",
-    "text": "How To Use This Template\nThis template will create a Github Repository with the standard folders, a descriptive ReadMe that only requires slight modification, and the foundation for a Quarto website that can serve as a summary of your project. Follow the steps below to copy this template to your lab’s GitHub\n\nOpen this repository on GitHub\nClick on the ‘Use this template’ button in the top right, select ‘Create new repository’\n\nEdit repository settings\n\nSelect the ‘Include all branches’ option\nSelect your lab organization or yourself as the owner and set the repository name to your Project Name\nMake description “Research Compendium for Project Name”\nMake the repo public\n\n\nClick create repository\nTurn on GitHub pages under Settings-&gt;Pages. You will set pages to be made from the gh-pages branch and root directory\n\nUpdate ‘Actions’ settings\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Actions permissions select ‘Allow all actions and reusable workflows’. Select save\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Workflow permissions select ‘Read and write permissions’\n\n\n\n\n\n\n\nNote: Both of these settings may already be selected but you have to click save for both\n\n\n\n\n\n\n\nReturn to the main page of the repo to edit your website\n\nClick on ‘Code’ in the top left\nClick on the settings button next to the ‘About’ section on the right side of the repository\nSelect ‘Use your GitHub Pages website’. This should autopopulate the website\nSelect ‘Save Changes’\n\n\nThe foundation for your Research Compendium is now created! We recommend that you first modify the ReadMe to add your Project Name in the appropriate places.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#example-github-research-compendiums",
-    "href": "index.html#example-github-research-compendiums",
-    "title": "Home",
-    "section": "Example Github Research Compendiums",
-    "text": "Example Github Research Compendiums\nHere are two lab manuals to pull inspiration from\n\nSWFSC Adrift in the California Current Project\nSWFSC BANTER for Beaked Whales",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
     "objectID": "content/folderStructure.html",
     "href": "content/folderStructure.html",
     "title": "Folder Structure & Content",
@@ -127,6 +87,46 @@
     "text": "📁 supplement\nSupplementary files that are not data, script, or components of the manuscript.",
     "crumbs": [
       "Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "** This Template is available for use, but is also under construction and may be improved over time**",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#what-is-a-research-compendium",
+    "href": "index.html#what-is-a-research-compendium",
+    "title": "Home",
+    "section": "What is a Research Compendium?",
+    "text": "What is a Research Compendium?\nA Research Compendium serves as both a ‘home’ for all the digital components of a research project as well as a means of managing, updating, and sharing this information. We want to create this collection so that reproducing the results is straightforward.\nBecause PAM data is naturally very large data– we do NOT want to save our raw acoustic data here. We do recommend that your research compendium provide information on accessing this raw data. This is valuable for others, and for Future You.\nThis research compendium is set up to create an HTML output (not necessarily a word doc or pdf).",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-template",
+    "href": "index.html#how-to-use-this-template",
+    "title": "Home",
+    "section": "How To Use This Template",
+    "text": "How To Use This Template\nThis template will create a Github Repository with the standard folders, a descriptive ReadMe that only requires slight modification, and the foundation for a Quarto website that can serve as a summary of your project. Follow the steps below to copy this template to your lab’s GitHub\n\nOpen this repository on GitHub\nClick on the ‘Use this template’ button in the top right, select ‘Create new repository’\n\nEdit repository settings\n\nSelect the ‘Include all branches’ option\nSelect your lab organization or yourself as the owner and set the repository name to your Project Name\nMake description “Research Compendium for Project Name”\nMake the repo public\n\n\nClick create repository\nTurn on GitHub pages under Settings-&gt;Pages. You will set pages to be made from the gh-pages branch and root directory\n\nUpdate ‘Actions’ settings\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Actions permissions select ‘Allow all actions and reusable workflows’. Select save\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Workflow permissions select ‘Read and write permissions’\n\n\n\n\n\n\n\nNote: Both of these settings may already be selected but you have to click save for both\n\n\n\n\n\n\n\nReturn to the main page of the repo to edit your website\n\nClick on ‘Code’ in the top left\nClick on the settings button next to the ‘About’ section on the right side of the repository\nSelect ‘Use your GitHub Pages website’. This should autopopulate the website\nSelect ‘Save Changes’\n\n\nThe foundation for your Research Compendium is now created! We recommend that you first modify the ReadMe to add your Project Name in the appropriate places.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#example-github-research-compendiums",
+    "href": "index.html#example-github-research-compendiums",
+    "title": "Home",
+    "section": "Example Github Research Compendiums",
+    "text": "Example Github Research Compendiums\nHere are two lab manuals to pull inspiration from\n\nSWFSC Adrift in the California Current Project\nSWFSC BANTER for Beaked Whales",
+    "crumbs": [
+      "Home"
     ]
   }
 ]
