@@ -1,0 +1,132 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "** This Template is available for use, but is also under construction and may be improved over time**",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#what-is-a-research-compendium",
+    "href": "index.html#what-is-a-research-compendium",
+    "title": "Home",
+    "section": "What is a Research Compendium?",
+    "text": "What is a Research Compendium?\nA Research Compendium serves as both a ‘home’ for all the digital components of a research project as well as a means of managing, updating, and sharing this information. We want to create this collection so that reproducing the results is straightforward.\nBecause PAM data is naturally very large data– we do NOT want to save our raw acoustic data here. We do recommend that your research compendium provide information on accessing this raw data. This is valuable for others, and for Future You.\nThis research compendium is set up to create an HTML output (not necessarily a word doc or pdf).",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-template",
+    "href": "index.html#how-to-use-this-template",
+    "title": "Home",
+    "section": "How To Use This Template",
+    "text": "How To Use This Template\nThis template will create a Github Repository with the standard folders, a descriptive ReadMe that only requires slight modification, and the foundation for a Quarto website that can serve as a summary of your project. Follow the steps below to copy this template to your lab’s GitHub\n\nOpen this repository on GitHub\nClick on the ‘Use this template’ button in the top right, select ‘Create new repository’\n\nEdit repository settings\n\nSelect the ‘Include all branches’ option\nSelect your lab organization or yourself as the owner and set the repository name to your Project Name\nMake description “Research Compendium for Project Name”\nMake the repo public\n\n\nClick create repository\nTurn on GitHub pages under Settings-&gt;Pages. You will set pages to be made from the gh-pages branch and root directory\n\nUpdate ‘Actions’ settings\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Actions permissions select ‘Allow all actions and reusable workflows’. Select save\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Workflow permissions select ‘Read and write permissions’\n\n\n\n\n\n\n\nNote: Both of these settings may already be selected but you have to click save for both\n\n\n\n\n\n\n\nReturn to the main page of the repo to edit your website\n\nClick on ‘Code’ in the top left\nClick on the settings button next to the ‘About’ section on the right side of the repository\nSelect ‘Use your GitHub Pages website’. This should autopopulate the website\nSelect ‘Save Changes’\n\n\nThe foundation for your Research Compendium is now created! We recommend that you first modify the ReadMe to add your Project Name in the appropriate places.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#example-github-research-compendiums",
+    "href": "index.html#example-github-research-compendiums",
+    "title": "Home",
+    "section": "Example Github Research Compendiums",
+    "text": "Example Github Research Compendiums\nHere are two lab manuals to pull inspiration from\n\nSWFSC Adrift in the California Current Project\nSWFSC BANTER for Beaked Whales",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html",
+    "href": "content/folderStructure.html",
+    "title": "Folder Structure & Content",
+    "section": "",
+    "text": "This template provides a set of standard folders for specific types of files. We recommend following these standard approaches as consistency allows us to follow each other’s research workflow.\nHere we further explain how to work with this folder structure, with tips and tricks to make your work more accessible, reproducible, and to help Future You!",
+    "crumbs": [
+      "Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#manuscript",
+    "href": "content/folderStructure.html#manuscript",
+    "title": "Folder Structure & Content",
+    "section": "📁 manuscript",
+    "text": "📁 manuscript\nManuscript for Report. This may contain one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).",
+    "crumbs": [
+      "Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#content",
+    "href": "content/folderStructure.html#content",
+    "title": "Folder Structure & Content",
+    "section": "📁 content",
+    "text": "📁 content\nThis Research Compendium template is formatted for a HTML (website) output, and all chapters/sections for online report should reside in this content folder.",
+    "crumbs": [
+      "Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#figs",
+    "href": "content/folderStructure.html#figs",
+    "title": "Folder Structure & Content",
+    "section": "📁 figs",
+    "text": "📁 figs\nContains all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).",
+    "crumbs": [
+      "Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#docs",
+    "href": "content/folderStructure.html#docs",
+    "title": "Folder Structure & Content",
+    "section": "📁 docs",
+    "text": "📁 docs\nContains rendered versions of the reports (if applicable). Note that this is different from the manuscript folder, which would have version(s) of the manuscript not rendered directly from the repository.\n\n\n\n\n\n\nNote: Need to check if this is relevant for this particular HTML output format",
+    "crumbs": [
+      "Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#data",
+    "href": "content/folderStructure.html#data",
+    "title": "Folder Structure & Content",
+    "section": "📁 data",
+    "text": "📁 data\nContains ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\n\n\n\n\n\n\nNote: Where do we recommend that they identify the location of any data or data products not directly saved to this repository? In the readme? or the index file?",
+    "crumbs": [
+      "Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#output",
+    "href": "content/folderStructure.html#output",
+    "title": "Folder Structure & Content",
+    "section": "📁 output",
+    "text": "📁 output\nThis can include any modified or intermediate data or data products (data in data folder is ORIGINAL), and data in output may be modified using code stored in code folder.",
+    "crumbs": [
+      "Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#code",
+    "href": "content/folderStructure.html#code",
+    "title": "Folder Structure & Content",
+    "section": "📁 code",
+    "text": "📁 code\nScripts that actually do things. If using R, your script should use the here package rather than setwd() to build paths to files and allow for more efficient reproduction of workflow. Script should automatically access data in the data folder and save output to relevant folders (output, figs).\n\n_commonR.R\nWe recommend saving commonly used functions in the _commonR.R file (assuming you are using R for your analysis– if not, you can delete this file). This is a good place to identify the libraries to load, any themes or common formatting requirements, or other common functions. Ideally these types of functions are only located in one place, so that they only need to be changed in one place. You can then source this file in other code (reduces redundancy and allows you to modify these basic functions in one place instead of throughout your various scripts).",
+    "crumbs": [
+      "Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#supplement",
+    "href": "content/folderStructure.html#supplement",
+    "title": "Folder Structure & Content",
+    "section": "📁 supplement",
+    "text": "📁 supplement\nSupplementary files that are not data, script, or components of the manuscript.",
+    "crumbs": [
+      "Folder Structure & Content"
+    ]
+  }
+]
