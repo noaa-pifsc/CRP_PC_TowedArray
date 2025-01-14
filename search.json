@@ -94,37 +94,37 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "** This Template is available for use, but is also under construction and may be improved over time**",
+    "text": "Cetacean Research Program’s analysis efforts to localize false killer whale subgroups from towed hydrophone arrays.\nTo understand movement of false killer whales (PC) relative to a research vessel by linking visual sightings with towed array acoustic localizations. Evaluating animal movement is important for PC abundance estimates as movement violates a distance sampling assumption.",
     "crumbs": [
       "Home"
     ]
   },
   {
-    "objectID": "index.html#what-is-a-research-compendium",
-    "href": "index.html#what-is-a-research-compendium",
+    "objectID": "index.html#reseach-goals",
+    "href": "index.html#reseach-goals",
     "title": "Home",
-    "section": "What is a Research Compendium?",
-    "text": "What is a Research Compendium?\nA Research Compendium serves as both a ‘home’ for all the digital components of a research project as well as a means of managing, updating, and sharing this information. We want to create this collection so that reproducing the results is straightforward.\nBecause PAM data is naturally very large data– we do NOT want to save our raw acoustic data here. We do recommend that your research compendium provide information on accessing this raw data. This is valuable for others, and for Future You.\nThis research compendium is set up to create an HTML output (not necessarily a word doc or pdf).",
+    "section": "",
+    "text": "Cetacean Research Program’s analysis efforts to localize false killer whale subgroups from towed hydrophone arrays.\nTo understand movement of false killer whales (PC) relative to a research vessel by linking visual sightings with towed array acoustic localizations. Evaluating animal movement is important for PC abundance estimates as movement violates a distance sampling assumption.",
     "crumbs": [
       "Home"
     ]
   },
   {
-    "objectID": "index.html#how-to-use-this-template",
-    "href": "index.html#how-to-use-this-template",
+    "objectID": "index.html#dataset",
+    "href": "index.html#dataset",
     "title": "Home",
-    "section": "How To Use This Template",
-    "text": "How To Use This Template\nThis template will create a Github Repository with the standard folders, a descriptive ReadMe that only requires slight modification, and the foundation for a Quarto website that can serve as a summary of your project. Follow the steps below to copy this template to your lab’s GitHub\n\nOpen this repository on GitHub\nClick on the ‘Use this template’ button in the top right, select ‘Create new repository’\n\nEdit repository settings\n\nSelect the ‘Include all branches’ option\nSelect your lab organization or yourself as the owner and set the repository name to your Project Name\nMake description “Research Compendium for Project Name”\nMake the repo public\n\n\nClick create repository\nTurn on GitHub pages under Settings-&gt;Pages. You will set pages to be made from the gh-pages branch and root directory\n\nUpdate ‘Actions’ settings\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Actions permissions select ‘Allow all actions and reusable workflows’. Select save\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Workflow permissions select ‘Read and write permissions’\n\n\n\n\n\n\n\nNote: Both of these settings may already be selected but you have to click save for both\n\n\n\n\n\n\n\nReturn to the main page of the repo to edit your website\n\nClick on ‘Code’ in the top left\nClick on the settings button next to the ‘About’ section on the right side of the repository\nSelect ‘Use your GitHub Pages website’. This should autopopulate the website\nSelect ‘Save Changes’\n\n\nThe foundation for your Research Compendium is now created! We recommend that you first modify the ReadMe to add your Project Name in the appropriate places.",
+    "section": "Dataset",
+    "text": "Dataset\nAcoustic Data - Towed hydrophone array using largest spacing possible (Ranging ~25 to 45 m)\n\nVisually confirmed detections of false killer whales (Pseudorca crassidens) collected during survey efforts throughout the Hawaiian Islands in 2017 (DCLDE 2022 dataset; Yano et al. 2018)\nEncounters ranged from 1 to 2 hours while the ship traveled at 10 knots without turning",
     "crumbs": [
       "Home"
     ]
   },
   {
-    "objectID": "index.html#example-github-research-compendiums",
-    "href": "index.html#example-github-research-compendiums",
+    "objectID": "index.html#analysis-steps",
+    "href": "index.html#analysis-steps",
     "title": "Home",
-    "section": "Example Github Research Compendiums",
-    "text": "Example Github Research Compendiums\nHere are two lab manuals to pull inspiration from\n\nSWFSC Adrift in the California Current Project\nSWFSC BANTER for Beaked Whales",
+    "section": "Analysis Steps",
+    "text": "Analysis Steps\n\nTime-Difference-Of-Arrivals (TDOAs) for all FKW signals were automatically extracted and then aggregated into continuous tracks based on consistent TDOA trajectories using a multi-target Bayesian framework. (Custom MATLAB Script, Gruden)\nBoth echolocation clicks and whistles were combined during analysis to generate complete tracks.\nVisual sighting time and bearing information was placed within the TDOA tracks to examine how well the modalities align in identifying subgroups.\nPerpendicular distance to the trackline was computed at the beam for acoustically-detected subgroups, allowing for comparison to the visual detection function.\nSubgroups detected forward of the beam that aligned visually and acoustically, the perpendicular distances were compared to assess animal movement.\n\nBradford AL, Becker E, Oleson EM, Forney K, Moore J, Barlow J. 2020. “Abundance estimates of false killer whales in Hawaiian waters and the broader central pacific,” NOAA Tech Memo NMFS-PIFSC-104\nYano KM, Oleson EM, Keating JL, Balance LT, Hill MC, Bradford AL, Allen AN, Joyce TW, Moore JE, Henry A. 2018. “Cetacean and Seabird Data Collected During the Hawaiian Islands Cetacean and Ecosystem Assessment Survey (HICEAS), July-December 2017.” NOAA Tech Memo NMFS-PIFSC-72",
     "crumbs": [
       "Home"
     ]

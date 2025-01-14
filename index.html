@@ -134,9 +134,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-a-research-compendium" id="toc-what-is-a-research-compendium" class="nav-link active" data-scroll-target="#what-is-a-research-compendium">What is a Research Compendium?</a></li>
-  <li><a href="#how-to-use-this-template" id="toc-how-to-use-this-template" class="nav-link" data-scroll-target="#how-to-use-this-template">How To Use This Template</a></li>
-  <li><a href="#example-github-research-compendiums" id="toc-example-github-research-compendiums" class="nav-link" data-scroll-target="#example-github-research-compendiums">Example Github Research Compendiums</a></li>
+  <li><a href="#reseach-goals" id="toc-reseach-goals" class="nav-link active" data-scroll-target="#reseach-goals">Reseach Goals</a></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
+  <li><a href="#analysis-steps" id="toc-analysis-steps" class="nav-link" data-scroll-target="#analysis-steps">Analysis Steps</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/noaa-pifsc/CRP_PC_TowedArray/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/noaa-pifsc/CRP_PC_TowedArray/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/noaa-pifsc/CRP_PC_TowedArray/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -146,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Home</h1>
-<p class="subtitle lead">NOAA-PAM Research Compendium Template</p>
+<p class="subtitle lead">Localization of False Killer Whales</p>
 </div>
 
 
@@ -163,69 +163,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>** This Template is available for use, but is also under construction and may be improved over time**</p>
-<section id="what-is-a-research-compendium" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-research-compendium">What is a Research Compendium?</h2>
-<p>A Research Compendium serves as both a ‘home’ for all the digital components of a research project as well as a means of managing, updating, and sharing this information. We want to create this collection so that reproducing the results is straightforward.</p>
-<p>Because PAM data is naturally very large data– we do NOT want to save our raw acoustic data here. We do recommend that your research compendium provide information on accessing this raw data. This is valuable for others, and for Future You.</p>
-<p>This research compendium is set up to create an HTML output (not necessarily a word doc or pdf).</p>
+<section id="reseach-goals" class="level2">
+<h2 class="anchored" data-anchor-id="reseach-goals">Reseach Goals</h2>
+<p>Cetacean Research Program’s analysis efforts to localize false killer whale subgroups from towed hydrophone arrays.</p>
+<p>To understand movement of false killer whales (PC) relative to a research vessel by linking visual sightings with towed array acoustic localizations. Evaluating animal movement is important for PC abundance estimates as movement violates a distance sampling assumption.</p>
 </section>
-<section id="how-to-use-this-template" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use-this-template">How To Use This Template</h2>
-<p>This template will create a Github Repository with the standard folders, a descriptive ReadMe that only requires slight modification, and the foundation for a Quarto website that can serve as a summary of your project. Follow the steps below to copy this template to your lab’s GitHub</p>
-<ol type="1">
-<li><p>Open <a href="https://github.com/SAEL-SWFSC/PAM_template_ResearchCompendium">this repository on GitHub</a></p></li>
-<li><p>Click on the ‘Use this template’ button in the top right, select ‘Create new repository’</p>
-<p><img src="content/images/repoTemplate.png" class="img-fluid"></p></li>
-<li><p>Edit repository settings</p>
+<section id="dataset" class="level2">
+<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
+<p>Acoustic Data - Towed hydrophone array using largest spacing possible (Ranging ~25 to 45 m)</p>
 <ul>
-<li><p>Select the ‘Include all branches’ option</p></li>
-<li><p>Select your lab organization or yourself as the owner and set the repository name to your <strong><em>Project Name</em></strong></p></li>
-<li><p>Make description “Research Compendium for <strong><em>Project Name</em></strong>”</p></li>
-<li><p>Make the repo public</p>
-<p><img src="content/images/RepoSettings.png" class="img-fluid"></p></li>
-</ul></li>
-<li><p>Click create repository</p></li>
-<li><p>Turn on GitHub pages under Settings-&gt;Pages. You will set pages to be made from the gh-pages branch and root directory</p>
-<p><img src="content/images/branches.png" class="img-fluid"></p></li>
-<li><p>Update ‘Actions’ settings</p>
-<ul>
-<li><p>Under Settings -&gt; Actions -&gt; General -&gt; Actions permissions select ‘Allow all actions and reusable workflows’. Select save</p>
-<p><img src="content/images/actions.png" class="img-fluid" width="323"></p></li>
-<li><p>Under Settings -&gt; Actions -&gt; General -&gt; Workflow permissions select ‘Read and write permissions’</p>
-<p><img src="content/images/workflowPermissions.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note: Both of these settings may already be selected but you have to click save for both
-</div>
-</div>
-<div class="callout-body-container callout-body">
-
-</div>
-</div></li>
-</ul></li>
-<li><p>Return to the main page of the repo to edit your website</p>
-<ul>
-<li><p>Click on ‘Code’ in the top left</p></li>
-<li><p>Click on the settings button next to the ‘About’ section on the right side of the repository</p></li>
-<li><p>Select ‘Use your GitHub Pages website’. This should autopopulate the website</p></li>
-<li><p>Select ‘Save Changes’</p>
-<p><img src="content/images/website.png" class="img-fluid"></p></li>
-</ul></li>
-<li><p>The foundation for your Research Compendium is now created! We recommend that you first modify the ReadMe to add your Project Name in the appropriate places.</p></li>
-</ol>
-</section>
-<section id="example-github-research-compendiums" class="level2">
-<h2 class="anchored" data-anchor-id="example-github-research-compendiums">Example Github Research Compendiums</h2>
-<p>Here are two lab manuals to pull inspiration from</p>
-<ul>
-<li><a href="https://github.com/SAEL-SWFSC/Adrift">SWFSC Adrift in the California Current Project</a></li>
-<li><a href="https://github.com/shannonrankin/BANTER_BeakedWhales">SWFSC BANTER for Beaked Whales</a></li>
+<li><p>Visually confirmed detections of false killer whales (<em>Pseudorca crassidens</em>) collected during survey efforts throughout the Hawaiian Islands in 2017 (DCLDE 2022 dataset; Yano et al.&nbsp;2018)</p></li>
+<li><p>Encounters ranged from 1 to 2 hours while the ship traveled at 10 knots without turning</p></li>
 </ul>
+</section>
+<section id="analysis-steps" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-steps">Analysis Steps</h2>
+<ul>
+<li><p>Time-Difference-Of-Arrivals (TDOAs) for all FKW signals were automatically extracted and then aggregated into continuous tracks based on consistent TDOA trajectories using a multi-target Bayesian framework. (Custom MATLAB Script, Gruden)</p></li>
+<li><p>Both echolocation clicks and whistles were combined during analysis to generate complete tracks.</p></li>
+<li><p>Visual sighting time and bearing information was placed within the TDOA tracks to examine how well the modalities align in identifying subgroups.</p></li>
+<li><p>Perpendicular distance to the trackline was computed at the beam for acoustically-detected subgroups, allowing for comparison to the visual detection function.</p></li>
+<li><p>Subgroups detected forward of the beam that aligned visually and acoustically, the perpendicular distances were compared to assess animal movement.</p></li>
+</ul>
+<p><em>Bradford AL, Becker E, Oleson EM, Forney K, Moore J, Barlow J. 2020. “Abundance estimates of false killer whales in Hawaiian waters and the broader central pacific,” NOAA Tech Memo NMFS-PIFSC-104</em></p>
+<p><em>Yano KM, Oleson EM, Keating JL, Balance LT, Hill MC, Bradford AL, Allen AN, Joyce TW, Moore JE, Henry A. 2018. “Cetacean and Seabird Data Collected During the Hawaiian Islands Cetacean and Ecosystem Assessment Survey (HICEAS), July-December 2017.” NOAA Tech Memo NMFS-PIFSC-72</em></p>
 
 
 </section>
