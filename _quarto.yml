@@ -1,0 +1,55 @@
+project: 
+  type: website
+
+website: 
+  page-navigation: true
+  title: "NOAA quarto simple" 
+  site-url: "https://sael-swfsc.github.io/PAM_template_ResearchCompendium/" 
+  repo-url: "https://github.com/SAEL-SWFSC/PAM_template_ResearchCompendium"
+  repo-actions: [edit, source, issue]
+  favicon: images/favicon.ico
+  
+  page-footer:
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "&copy; CC-1.0"
+  
+  sidebar:
+    background: "#D9E3E4"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg"
+    favicon: images/favicon.ico
+    pinned: true
+    align: center
+    tools: 
+      - icon: globe
+        href: https://nmfs-ost.github.io/PAM_National_NMFS_Network
+        text: "NMFS National Passive Acoustic Monitoring Network"
+      - icon: github
+        href: https://github.com/SAEL-SWFSC/PAM_template_ResearchCompendium
+        text: "NMFS PAM SI Research Compendium Template"
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: content/folderStructure.qmd
+        text: "Folder Structure & Content"
+
+
+        
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss] 
+      dark: [cosmo, theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+
+filters:
+  - include-files.lua
+  - quarto
+
+  
