@@ -16,7 +16,7 @@ website:
   sidebar:
     background: "#BDCCD2"
     logo: images/FKW_OnlyWRing.png
-    favicon: images/favicon.ico
+    # favicon: images/favicon.ico
     pinned: true
     align: center
     tools: 
