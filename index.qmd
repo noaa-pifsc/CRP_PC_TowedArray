@@ -8,7 +8,7 @@ page-layout: full
 
 Cetacean Research Program's analysis efforts to localize false killer whale subgroups from towed hydrophone arrays.
 
-To understand movement of false killer whales (PC) relative to a research vessel by linking visual sightings with towed array acoustic localizations. Evaluating animal movement is important for PC abundance estimates as movement violates a distance sampling assumption.
+To understand movement of false killer whales (FKW) relative to a research vessel by linking visual sightings with towed array acoustic localizations. Evaluating animal movement is important for FKW abundance estimates as movement violates a distance sampling assumption.
 
 ## Dataset
 
