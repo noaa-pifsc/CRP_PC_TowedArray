@@ -1,5 +1,5 @@
 ---
-title: Folder Structure & Content
+title: GitHub Folder Structure & Content
 editor: 
   markdown: 
     wrap: 72

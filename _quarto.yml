@@ -3,7 +3,7 @@ project:
 
 website: 
   page-navigation: true
-  title: "NOAA quarto simple" 
+  title: "CRP_PC_TowedArray" 
   site-url: "https://scaling-robot-wgqml1r.pages.github.io/" 
   repo-url: "https://github.com/noaa-pifsc/CRP_PC_TowedArray"
   repo-actions: [edit, source, issue]
@@ -33,9 +33,12 @@ website:
     contents:
       - href: index.qmd
         text: Home
+      - href: content/Metadata.qmd
+        text: "Metadata"
+      - href: content/Analysis_Methods.qmd
+        text: "Analysis_Methods"
       - href: content/folderStructure.qmd
-        text: "Folder Structure & Content"
-
+        text: "GitHub Folder Structure & Content"
 
         
 format:

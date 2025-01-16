@@ -1,0 +1,47 @@
+---
+title: Metadata
+---
+
+## Towed Array Data
+
+-   **Encounter Information:** Link to [AC_FKW_Encounters](https://docs.google.com/spreadsheets/d/1BK5xezOtL3sSQy4PFtc8o3f1anFRbcDFygFNgcaz9RE/edit?usp=sharing)
+
+-   **Processed Data:** Stored `C:\FKW_Outputs`
+
+Name the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)
+
+Setup folder structure for each encounter:
+
+-   1_TDOA
+
+    -   Data
+
+        -   Raw_CrossCorrelogram
+
+    -   Results
+
+-   2_Extract-PG
+
+    -   Data
+
+        -   Extracted_tables
+
+        -   Pamguard_database_sqlite3
+
+    -   Results
+
+-   3_Localize
+
+    -   Data
+
+        -   Crosscorrelograms
+
+        -   GPSandPos_info
+
+        -   Pamguard_detections
+
+        -   Raw_GPSandArray_info
+
+        -   TDOA_tracks
+
+    -   Results
