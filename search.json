@@ -20,6 +20,36 @@
     ]
   },
   {
+    "objectID": "content/Analysis_Methods.html",
+    "href": "content/Analysis_Methods.html",
+    "title": "Analysis Methods",
+    "section": "",
+    "text": "1_TDOA: TDOA_tracking_master\n2_Extract-PG: Extract_Pamguard_detections\n3_Localize: Localization_Towed_Array",
+    "crumbs": [
+      "Analysis_Methods"
+    ]
+  },
+  {
+    "objectID": "content/Analysis_Methods.html#matlab-code",
+    "href": "content/Analysis_Methods.html#matlab-code",
+    "title": "Analysis Methods",
+    "section": "",
+    "text": "1_TDOA: TDOA_tracking_master\n2_Extract-PG: Extract_Pamguard_detections\n3_Localize: Localization_Towed_Array",
+    "crumbs": [
+      "Analysis_Methods"
+    ]
+  },
+  {
+    "objectID": "content/Analysis_Methods.html#encounter-processing-steps",
+    "href": "content/Analysis_Methods.html#encounter-processing-steps",
+    "title": "Analysis Methods",
+    "section": "Encounter Processing Steps",
+    "text": "Encounter Processing Steps",
+    "crumbs": [
+      "Analysis_Methods"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
