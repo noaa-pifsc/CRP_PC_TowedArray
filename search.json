@@ -1,92 +1,22 @@
 [
   {
-    "objectID": "content/folderStructure.html",
-    "href": "content/folderStructure.html",
-    "title": "Folder Structure & Content",
+    "objectID": "content/Metadata.html",
+    "href": "content/Metadata.html",
+    "title": "Metadata",
     "section": "",
-    "text": "This template provides a set of standard folders for specific types of files. We recommend following these standard approaches as consistency allows us to follow each other’s research workflow.\nHere we further explain how to work with this folder structure, with tips and tricks to make your work more accessible, reproducible, and to help Future You!",
+    "text": "Encounter Information: Link to AC_FKW_Encounters\nProcessed Data: Stored C:\\FKW_Outputs\n\nName the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)\nSetup folder structure for each encounter:\n\n1_TDOA\n\nData\n\nRaw_CrossCorrelogram\n\nResults\n\n2_Extract-PG\n\nData\n\nExtracted_tables\nPamguard_database_sqlite3\n\nResults\n\n3_Localize\n\nData\n\nCrosscorrelograms\nGPSandPos_info\nPamguard_detections\nRaw_GPSandArray_info\nTDOA_tracks\n\nResults",
     "crumbs": [
-      "Folder Structure & Content"
+      "Metadata"
     ]
   },
   {
-    "objectID": "content/folderStructure.html#manuscript",
-    "href": "content/folderStructure.html#manuscript",
-    "title": "Folder Structure & Content",
-    "section": "📁 manuscript",
-    "text": "📁 manuscript\nManuscript for Report. This may contain one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).",
+    "objectID": "content/Metadata.html#towed-array-data",
+    "href": "content/Metadata.html#towed-array-data",
+    "title": "Metadata",
+    "section": "",
+    "text": "Encounter Information: Link to AC_FKW_Encounters\nProcessed Data: Stored C:\\FKW_Outputs\n\nName the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)\nSetup folder structure for each encounter:\n\n1_TDOA\n\nData\n\nRaw_CrossCorrelogram\n\nResults\n\n2_Extract-PG\n\nData\n\nExtracted_tables\nPamguard_database_sqlite3\n\nResults\n\n3_Localize\n\nData\n\nCrosscorrelograms\nGPSandPos_info\nPamguard_detections\nRaw_GPSandArray_info\nTDOA_tracks\n\nResults",
     "crumbs": [
-      "Folder Structure & Content"
-    ]
-  },
-  {
-    "objectID": "content/folderStructure.html#content",
-    "href": "content/folderStructure.html#content",
-    "title": "Folder Structure & Content",
-    "section": "📁 content",
-    "text": "📁 content\nThis Research Compendium template is formatted for a HTML (website) output, and all chapters/sections for online report should reside in this content folder.",
-    "crumbs": [
-      "Folder Structure & Content"
-    ]
-  },
-  {
-    "objectID": "content/folderStructure.html#figs",
-    "href": "content/folderStructure.html#figs",
-    "title": "Folder Structure & Content",
-    "section": "📁 figs",
-    "text": "📁 figs\nContains all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).",
-    "crumbs": [
-      "Folder Structure & Content"
-    ]
-  },
-  {
-    "objectID": "content/folderStructure.html#docs",
-    "href": "content/folderStructure.html#docs",
-    "title": "Folder Structure & Content",
-    "section": "📁 docs",
-    "text": "📁 docs\nContains rendered versions of the reports (if applicable). Note that this is different from the manuscript folder, which would have version(s) of the manuscript not rendered directly from the repository.\n\n\n\n\n\n\nNote: Need to check if this is relevant for this particular HTML output format",
-    "crumbs": [
-      "Folder Structure & Content"
-    ]
-  },
-  {
-    "objectID": "content/folderStructure.html#data",
-    "href": "content/folderStructure.html#data",
-    "title": "Folder Structure & Content",
-    "section": "📁 data",
-    "text": "📁 data\nContains ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\n\n\n\n\n\n\nNote: Where do we recommend that they identify the location of any data or data products not directly saved to this repository? In the readme? or the index file?",
-    "crumbs": [
-      "Folder Structure & Content"
-    ]
-  },
-  {
-    "objectID": "content/folderStructure.html#output",
-    "href": "content/folderStructure.html#output",
-    "title": "Folder Structure & Content",
-    "section": "📁 output",
-    "text": "📁 output\nThis can include any modified or intermediate data or data products (data in data folder is ORIGINAL), and data in output may be modified using code stored in code folder.",
-    "crumbs": [
-      "Folder Structure & Content"
-    ]
-  },
-  {
-    "objectID": "content/folderStructure.html#code",
-    "href": "content/folderStructure.html#code",
-    "title": "Folder Structure & Content",
-    "section": "📁 code",
-    "text": "📁 code\nScripts that actually do things. If using R, your script should use the here package rather than setwd() to build paths to files and allow for more efficient reproduction of workflow. Script should automatically access data in the data folder and save output to relevant folders (output, figs).\n\n_commonR.R\nWe recommend saving commonly used functions in the _commonR.R file (assuming you are using R for your analysis– if not, you can delete this file). This is a good place to identify the libraries to load, any themes or common formatting requirements, or other common functions. Ideally these types of functions are only located in one place, so that they only need to be changed in one place. You can then source this file in other code (reduces redundancy and allows you to modify these basic functions in one place instead of throughout your various scripts).",
-    "crumbs": [
-      "Folder Structure & Content"
-    ]
-  },
-  {
-    "objectID": "content/folderStructure.html#supplement",
-    "href": "content/folderStructure.html#supplement",
-    "title": "Folder Structure & Content",
-    "section": "📁 supplement",
-    "text": "📁 supplement\nSupplementary files that are not data, script, or components of the manuscript.",
-    "crumbs": [
-      "Folder Structure & Content"
+      "Metadata"
     ]
   },
   {
@@ -127,6 +57,96 @@
     "text": "Analysis Steps\n\nTime-Difference-Of-Arrivals (TDOAs) for all FKW signals were automatically extracted and then aggregated into continuous tracks based on consistent TDOA trajectories using a multi-target Bayesian framework. (Custom MATLAB Script, Gruden)\nBoth echolocation clicks and whistles were combined during analysis to generate complete tracks.\nVisual sighting time and bearing information was placed within the TDOA tracks to examine how well the modalities align in identifying subgroups.\nPerpendicular distance to the trackline was computed at the beam for acoustically-detected subgroups, allowing for comparison to the visual detection function.\nSubgroups detected forward of the beam that aligned visually and acoustically, the perpendicular distances were compared to assess animal movement.\n\nBradford AL, Becker E, Oleson EM, Forney K, Moore J, Barlow J. 2020. “Abundance estimates of false killer whales in Hawaiian waters and the broader central pacific,” NOAA Tech Memo NMFS-PIFSC-104\nYano KM, Oleson EM, Keating JL, Balance LT, Hill MC, Bradford AL, Allen AN, Joyce TW, Moore JE, Henry A. 2018. “Cetacean and Seabird Data Collected During the Hawaiian Islands Cetacean and Ecosystem Assessment Survey (HICEAS), July-December 2017.” NOAA Tech Memo NMFS-PIFSC-72",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html",
+    "href": "content/folderStructure.html",
+    "title": "GitHub Folder Structure & Content",
+    "section": "",
+    "text": "This template provides a set of standard folders for specific types of files. We recommend following these standard approaches as consistency allows us to follow each other’s research workflow.\nHere we further explain how to work with this folder structure, with tips and tricks to make your work more accessible, reproducible, and to help Future You!",
+    "crumbs": [
+      "GitHub Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#manuscript",
+    "href": "content/folderStructure.html#manuscript",
+    "title": "GitHub Folder Structure & Content",
+    "section": "📁 manuscript",
+    "text": "📁 manuscript\nManuscript for Report. This may contain one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).",
+    "crumbs": [
+      "GitHub Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#content",
+    "href": "content/folderStructure.html#content",
+    "title": "GitHub Folder Structure & Content",
+    "section": "📁 content",
+    "text": "📁 content\nThis Research Compendium template is formatted for a HTML (website) output, and all chapters/sections for online report should reside in this content folder.",
+    "crumbs": [
+      "GitHub Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#figs",
+    "href": "content/folderStructure.html#figs",
+    "title": "GitHub Folder Structure & Content",
+    "section": "📁 figs",
+    "text": "📁 figs\nContains all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).",
+    "crumbs": [
+      "GitHub Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#docs",
+    "href": "content/folderStructure.html#docs",
+    "title": "GitHub Folder Structure & Content",
+    "section": "📁 docs",
+    "text": "📁 docs\nContains rendered versions of the reports (if applicable). Note that this is different from the manuscript folder, which would have version(s) of the manuscript not rendered directly from the repository.\n\n\n\n\n\n\nNote: Need to check if this is relevant for this particular HTML output format",
+    "crumbs": [
+      "GitHub Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#data",
+    "href": "content/folderStructure.html#data",
+    "title": "GitHub Folder Structure & Content",
+    "section": "📁 data",
+    "text": "📁 data\nContains ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\n\n\n\n\n\n\nNote: Where do we recommend that they identify the location of any data or data products not directly saved to this repository? In the readme? or the index file?",
+    "crumbs": [
+      "GitHub Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#output",
+    "href": "content/folderStructure.html#output",
+    "title": "GitHub Folder Structure & Content",
+    "section": "📁 output",
+    "text": "📁 output\nThis can include any modified or intermediate data or data products (data in data folder is ORIGINAL), and data in output may be modified using code stored in code folder.",
+    "crumbs": [
+      "GitHub Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#code",
+    "href": "content/folderStructure.html#code",
+    "title": "GitHub Folder Structure & Content",
+    "section": "📁 code",
+    "text": "📁 code\nScripts that actually do things. If using R, your script should use the here package rather than setwd() to build paths to files and allow for more efficient reproduction of workflow. Script should automatically access data in the data folder and save output to relevant folders (output, figs).\n\n_commonR.R\nWe recommend saving commonly used functions in the _commonR.R file (assuming you are using R for your analysis– if not, you can delete this file). This is a good place to identify the libraries to load, any themes or common formatting requirements, or other common functions. Ideally these types of functions are only located in one place, so that they only need to be changed in one place. You can then source this file in other code (reduces redundancy and allows you to modify these basic functions in one place instead of throughout your various scripts).",
+    "crumbs": [
+      "GitHub Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/folderStructure.html#supplement",
+    "href": "content/folderStructure.html#supplement",
+    "title": "GitHub Folder Structure & Content",
+    "section": "📁 supplement",
+    "text": "📁 supplement\nSupplementary files that are not data, script, or components of the manuscript.",
+    "crumbs": [
+      "GitHub Folder Structure & Content"
     ]
   }
 ]
