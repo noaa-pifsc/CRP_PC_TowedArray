@@ -84,7 +84,17 @@
     "href": "index.html#analysis-steps",
     "title": "Home",
     "section": "Analysis Steps",
-    "text": "Analysis Steps\n\nTime-Difference-Of-Arrivals (TDOAs) for all FKW signals were automatically extracted and then aggregated into continuous tracks based on consistent TDOA trajectories using a multi-target Bayesian framework. (Custom MATLAB Script, Gruden)\nBoth echolocation clicks and whistles were combined during analysis to generate complete tracks.\nVisual sighting time and bearing information was placed within the TDOA tracks to examine how well the modalities align in identifying subgroups.\nPerpendicular distance to the trackline was computed at the beam for acoustically-detected subgroups, allowing for comparison to the visual detection function.\nSubgroups detected forward of the beam that aligned visually and acoustically, the perpendicular distances were compared to assess animal movement.\n\nBradford AL, Becker E, Oleson EM, Forney K, Moore J, Barlow J. 2020. “Abundance estimates of false killer whales in Hawaiian waters and the broader central pacific,” NOAA Tech Memo NMFS-PIFSC-104\nYano KM, Oleson EM, Keating JL, Balance LT, Hill MC, Bradford AL, Allen AN, Joyce TW, Moore JE, Henry A. 2018. “Cetacean and Seabird Data Collected During the Hawaiian Islands Cetacean and Ecosystem Assessment Survey (HICEAS), July-December 2017.” NOAA Tech Memo NMFS-PIFSC-72",
+    "text": "Analysis Steps\n\nTime-Difference-Of-Arrivals (TDOAs) for all FKW signals were automatically extracted and then aggregated into continuous tracks based on consistent TDOA trajectories using a multi-target Bayesian framework. (Custom MATLAB Script, Gruden)\nBoth echolocation clicks and whistles were combined during analysis to generate complete tracks.\nVisual sighting time and bearing information was placed within the TDOA tracks to examine how well the modalities align in identifying subgroups.\nPerpendicular distance to the trackline was computed at the beam for acoustically-detected subgroups, allowing for comparison to the visual detection function.\nSubgroups detected forward of the beam that aligned visually and acoustically, the perpendicular distances were compared to assess animal movement.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#project-time",
+    "href": "index.html#project-time",
+    "title": "Home",
+    "section": "Project Time",
+    "text": "Project Time\nToolbox Timeline\nBradford AL, Becker E, Oleson EM, Forney K, Moore J, Barlow J. 2020. “Abundance estimates of false killer whales in Hawaiian waters and the broader central pacific,” NOAA Tech Memo NMFS-PIFSC-104\nYano KM, Oleson EM, Keating JL, Balance LT, Hill MC, Bradford AL, Allen AN, Joyce TW, Moore JE, Henry A. 2018. “Cetacean and Seabird Data Collected During the Hawaiian Islands Cetacean and Ecosystem Assessment Survey (HICEAS), July-December 2017.” NOAA Tech Memo NMFS-PIFSC-72",
     "crumbs": [
       "Home"
     ]
