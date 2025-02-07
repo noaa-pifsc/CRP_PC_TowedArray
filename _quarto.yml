@@ -1,5 +1,9 @@
 project: 
   type: website
+  #Activate this code if we have scripts in the code folder and we don't want them reguarly rendered.
+  # output-dir: docs 
+  # render:
+  #   - "*.qmd"Z
 
 website: 
   page-navigation: true
