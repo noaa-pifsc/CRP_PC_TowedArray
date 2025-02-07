@@ -22,12 +22,16 @@ title: Analysis Methods
 
 5.  Run A1_Compute_CrossCorrelogram.m. Note that this will take a while and if both signal types are being processed it will going through all the file types twice.
 
-6.  Run A2_ExtractMeasurements_and_TrackTDOAs.m. This file should be much faster and if not run quickly then something was processed incorrectly.
+6.  Example output (Note it will most likely always look faint at this stage)... ![](/images/TDOA_A1_Fig1-2.PNG)
 
-7.  Next follow the instructions for Extract_Pamguard_detections if PAMGuard data was collected for the encounter. Set all directory paths and parameters using the ReadMe instructions for the package. Note that sqlite file will be need to be copied into the folder structure for processing.
+7.  Run A2_ExtractMeasurements_and_TrackTDOAs.m. This file should be much faster and if not run quickly then something was processed incorrectly.
 
-8.  Run A1_Extract_Tables_from_SQLite.m (Should be relatively quick)
+8.  Example output...![](/images/TDOA_A2_Fig1-2-3.PNG)
 
-9.  Run A2_Extract_Detections_Info.m (Should be relatively quick)
+9.  Next follow the instructions for Extract_Pamguard_detections if PAMGuard data was collected for the encounter. Set all directory paths and parameters using the ReadMe instructions for the package. Note that sqlite file will be need to be copied into the folder structure for processing.
 
-10. Lastly, follow the instructions for Localization_Towed_Array. Set all directory paths and parameters using the ReadMe instructions for the package. Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.
+10. Run A1_Extract_Tables_from_SQLite.m (Should be relatively quick)
+
+11. Run A2_Extract_Detections_Info.m (Should be relatively quick)
+
+12. Lastly, follow the instructions for Localization_Towed_Array. Set all directory paths and parameters using the ReadMe instructions for the package. Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.
