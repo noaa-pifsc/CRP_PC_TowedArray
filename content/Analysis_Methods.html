@@ -195,6 +195,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Run A1_Extract_Tables_from_SQLite.m (Should be relatively quick)</p></li>
 <li><p>Run A2_Extract_Detections_Info.m (Should be relatively quick)</p></li>
 <li><p>Lastly, follow the instructions for Localization_Towed_Array. Set all directory paths and parameters using the ReadMe instructions for the package. Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.</p></li>
+<li><p>Run A0_GetGPSData.m (this takes a bit of time)</p></li>
+<li><p>Run A0_SetUp.m (Should be relatively quick)</p></li>
+<li><p>Example output…<img src="../images/Localize_A0_Fig1-2.PNG" class="img-fluid"></p></li>
+<li><p>Run A1_Localize.m</p></li>
+<li><p>Example output… TDOA_Tracks<img src="../images/Localize_A1_FinalTracks.PNG" class="img-fluid"></p></li>
+<li><p>Example output… Loc_Plot<img src="../images/Localize_A1_FinalMap.PNG" class="img-fluid"></p></li>
+<li><p>At the end save 3 things before closing out of Matlab… writetable(Loc_table,‘Loc_table.csv’); Save As –&gt; TDOA_Tracks_Plot.jpeg; Save As –&gt; Loc_Plot.fig</p></li>
 </ol>
 
 
