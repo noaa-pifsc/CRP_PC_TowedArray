@@ -35,3 +35,17 @@ title: Analysis Methods
 11. Run A2_Extract_Detections_Info.m (Should be relatively quick)
 
 12. Lastly, follow the instructions for Localization_Towed_Array. Set all directory paths and parameters using the ReadMe instructions for the package. Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.
+
+13. Run A0_GetGPSData.m (this takes a bit of time)
+
+14. Run A0_SetUp.m (Should be relatively quick)
+
+15. Example output...![](/images/Localize_A0_Fig1-2.PNG)
+
+16. Run A1_Localize.m
+
+17. Example output... TDOA_Tracks![](/images/Localize_A1_FinalTracks.PNG)
+
+18. Example output... Loc_Plot![](/images/Localize_A1_FinalMap.PNG)
+
+19. At the end save 3 things before closing out of Matlab... writetable(Loc_table,'Loc_table.csv'); Save As –\> TDOA_Tracks_Plot.jpeg; Save As –\> Loc_Plot.fig
