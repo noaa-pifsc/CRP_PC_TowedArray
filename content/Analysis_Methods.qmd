@@ -4,48 +4,55 @@ title: Analysis Methods
 
 ## MatLab Code
 
-1_TDOA: [TDOA_tracking_master](https://github.com/PinaGruden/TDOA_tracking_master)
+1_TDOA: [TDOA_tracking_master](https://github.com/PinaGruden/TDOA_tracking_master){target="_blank"}
 
-2_Extract-PG: [Extract_Pamguard_detections](https://github.com/PinaGruden/Extract_Pamguard_detections)
+2_Extract-PG: [Extract_Pamguard_detections](https://github.com/PinaGruden/Extract_Pamguard_detections){target="_blank"}
 
-3_Localize: [Localization_Towed_Array](https://github.com/PinaGruden/Localization_Towed_Array)
+3_Localize: [Localization_Towed_Array](https://github.com/PinaGruden/Localization_Towed_Array){target="_blank"}
 
 ## Encounter Processing Steps
 
-1.  Start with TDOA_tracking_master. Set all directory paths and parameters using the ReadMe instructions for the package.
+1.  Start with **TDOA_tracking_master**. Set all directory paths and parameters using the ReadMe instructions for the package.
 
-2.  In Specify_Parameters check the name of the array against the list in Array_Info.cvs. If the array design required is not listed add it to the list. Specify Encounter has the following naming structure: 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles). Example: 1705279P1 (HICEAS17-Lasker AC279 both)
+2.  In `Specify_Parameters4Xcorr.m` check the name of the array against the list in `Array_Info.cvs`. If the array design required is not listed add it to the list. Specify Encounter has the following naming structure: 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles). Example: 1705279P1 (HICEAS17-Lasker AC279 both)
 
-3.  Add the following code to line 111 of the A2_ExtractMeasurements_and_TrackTDOAs.m file... ![](/images/TDOA_AddCode.PNG)
+3.  Add the following code to line 111 of the `A2_ExtractMeasurements_and_TrackTDOAs.m` file... ![](/images/TDOA_AddCode.PNG)
 
-4.  Set signals to be processed to clicks, whistles, or both in line 16 of A1_Compute_CrossCorrelogram.m. The first choice is both, but in some cases only one signal type was detected in the encounter.
+4.  Set signals to be processed to clicks, whistles, or both in line 16 of `A1_Compute_CrossCorrelogram.m`. The first choice is both, but in some cases only one signal type was detected in the encounter.
 
-5.  Run A1_Compute_CrossCorrelogram.m. Note that this will take a while and if both signal types are being processed it will going through all the file types twice.
+5.  Run `A1_Compute_CrossCorrelogram.m`. Note that this will take a while and if both signal types are being processed it will going through all the file types twice.
 
 6.  Example output (Note it will most likely always look faint at this stage)... ![](/images/TDOA_A1_Fig1-2.PNG)
 
-7.  Run A2_ExtractMeasurements_and_TrackTDOAs.m. This file should be much faster and if not run quickly then something was processed incorrectly.
+7.  Run `A2_ExtractMeasurements_and_TrackTDOAs.m`. This file should be much faster and if not run quickly then something was processed incorrectly.
 
 8.  Example output...![](/images/TDOA_A2_Fig1-2-3.PNG)
 
-9.  Next follow the instructions for Extract_Pamguard_detections if PAMGuard data was collected for the encounter. Set all directory paths and parameters using the ReadMe instructions for the package. Note that sqlite file will be need to be copied into the folder structure for processing.
+9.  If the TDOA tracks look problematic then open `Specify_Parameters4Tracking.m` you now have another changeable parameter called `parameters.rts` (lines 103-107):\
+    `% Specify if you want to forward-backward smooth labels of the estimates % (can help resolve some deviations of the tracks when multiple estimates % get assigned the same label at the same time step): to use the smoother % choose true, otherwise choose false: parameters.rts=false; %(true/false)`
 
-10. Run A1_Extract_Tables_from_SQLite.m (Should be relatively quick)
+    The default will be false, but if you want to use the forward/backward smoothing then specify `true`.
 
-11. Run A2_Extract_Detections_Info.m (Should be relatively quick)
+    From Pina Gruden: Again, a word of caution- like any smoothing algorithm, it will impact results if you use it or not. My personal preference is not to use the smoothing, but for the "problematic" examples like you had above, it could help. I still think, that for "problematic" examples, where assumptions are violated, a different solution would be preferable in long term.
 
-12. Lastly, follow the instructions for Localization_Towed_Array. Set all directory paths and parameters using the ReadMe instructions for the package. Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.
+10. Next follow the instructions for **Extract_Pamguard_detections** if PAMGuard data was collected for the encounter. Set all directory paths and parameters using the ReadMe instructions for the package. Note that sqlite file will be need to be copied into the folder structure for processing.
 
-13. Run A0_GetGPSData.m (this takes a bit of time)
+11. Run `A1_Extract_Tables_from_SQLite.m` (Should be relatively quick)
 
-14. Run A0_SetUp.m (Should be relatively quick)
+12. Run `A2_Extract_Detections_Info.m` (Should be relatively quick)
 
-15. Example output...![](/images/Localize_A0_Fig1-2.PNG)
+13. Lastly, follow the instructions for **Localization_Towed_Array**. Set all directory paths and parameters using the ReadMe instructions for the package. Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.
 
-16. Run A1_Localize.m
+14. Run `A0_GetGPSData.m` (this takes a bit of time)
 
-17. Example output... TDOA_Tracks![](/images/Localize_A1_FinalTracks.PNG)
+15. Run `A0_SetUp.m` (Should be relatively quick)
 
-18. Example output... Loc_Plot![](/images/Localize_A1_FinalMap.PNG)
+16. Example output...![](/images/Localize_A0_Fig1-2.PNG)
 
-19. At the end save 3 things before closing out of Matlab... writetable(Loc_table,'Loc_table.csv'); Save As –\> TDOA_Tracks_Plot.jpeg; Save As –\> Loc_Plot.fig
+17. Run `A1_Localize.m`. As tracks are selected for localization, keep track in an Excel file the combinations used in case the package crashes while trying to process the next set of tracks. Track data is not saved until the end where the compiled Loc_Plot is generated.
+
+18. Example output... TDOA_Tracks![](/images/Localize_A1_FinalTracks.PNG)
+
+19. Example output... Loc_Plot![](/images/Localize_A1_FinalMap.PNG)
+
+20. At the end save 3 things before closing out of Matlab... `writetable(Loc_table,'Loc_table.csv')`; Save As –\> `TDOA_Tracks_Plot.jpeg`; Save As –\> `Loc_Plot.fig`

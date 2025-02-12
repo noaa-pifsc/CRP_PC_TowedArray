@@ -4,7 +4,7 @@ title: Metadata
 
 ## Towed Array Data
 
--   **Encounter Information:** Link to [AC_FKW_Encounters](https://docs.google.com/spreadsheets/d/1BK5xezOtL3sSQy4PFtc8o3f1anFRbcDFygFNgcaz9RE/edit?usp=sharing)
+-   **Encounter Information:** Link to [AC_FKW_Encounters](https://docs.google.com/spreadsheets/d/1BK5xezOtL3sSQy4PFtc8o3f1anFRbcDFygFNgcaz9RE/edit?usp=sharing){target="_blank"}
 
 -   **Processed Data:** Stored `C:\FKW_Outputs`
 

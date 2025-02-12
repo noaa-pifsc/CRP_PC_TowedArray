@@ -27,9 +27,11 @@ website:
       - icon: globe
         href: https://www.fisheries.noaa.gov/pacific-islands/population-assessments/passive-acoustics-pacific-islands
         text: "NOAA Fisheries PIFSC - Passive Acoustic Monitoring"
+        target: _blank
       - icon: github
         href: https://github.com/SAEL-SWFSC/PAM_template_ResearchCompendium
         text: "NMFS PAM SI Research Compendium Template"
+        target: _blank
 
     style: "docked"
     search: true

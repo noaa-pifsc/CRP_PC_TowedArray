@@ -16,6 +16,8 @@ Acoustic Data - Towed hydrophone array using largest spacing possible (Ranging \
 
 -   Visually confirmed detections of false killer whales (*Pseudorca crassidens*) collected during survey efforts throughout the Hawaiian Islands in 2017 (DCLDE 2022 dataset; Yano et al. 2018)
 
+-   Acoustic only encounters were confirmed with the [*banter*](https://github.com/EricArcher/banter){target="_blank"} classifier published in McCullough et al. 2021. 
+
 -   Encounters ranged from 1 to 2 hours while the ship traveled at 10 knots without turning
 
 ## Analysis Steps
@@ -32,8 +34,12 @@ Acoustic Data - Towed hydrophone array using largest spacing possible (Ranging \
 
 ## Project Time
 
-[Toolbox Timeline](https://docs.google.com/spreadsheets/d/160qWi3AINYFSISzhsMcmii3Qch1bzGty5HJ6ZO4q4L4/edit?usp=sharing)
+[Toolbox Timeline](https://docs.google.com/spreadsheets/d/160qWi3AINYFSISzhsMcmii3Qch1bzGty5HJ6ZO4q4L4/edit?usp=sharing){target="_blank"}\
+
+## References
 
 *Bradford AL, Becker E, Oleson EM, Forney K, Moore J, Barlow J. 2020. “Abundance estimates of false killer whales in Hawaiian waters and the broader central pacific,” NOAA Tech Memo NMFS-PIFSC-104*
+
+*McCullough, Jennifer L. K., Anne E. Simonis, Taiki Sakai, and Erin M. Oleson. 2021. “Acoustic Classification of False Killer Whales in the Hawaiian Islands Based on Comprehensive Vocal Repertoire.” JASA Express Letters 1 (7). https://doi.org/10.1121/10.0005512.*
 
 *Yano KM, Oleson EM, Keating JL, Balance LT, Hill MC, Bradford AL, Allen AN, Joyce TW, Moore JE, Henry A. 2018. “Cetacean and Seabird Data Collected During the Hawaiian Islands Cetacean and Ecosystem Assessment Survey (HICEAS), July-December 2017.” NOAA Tech Memo NMFS-PIFSC-72*
