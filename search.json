@@ -34,7 +34,7 @@
     "href": "content/Metadata.html",
     "title": "Metadata",
     "section": "",
-    "text": "Encounter Information: Link to AC_FKW_Encounters\nProcessed Data: Stored C:\\FKW_Outputs\n\nName the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)\nSetup folder structure for each encounter:\n\n1_TDOA\n\nData\n\nRaw_CrossCorrelogram\n\nResults\n\n2_Extract-PG\n\nData\n\nExtracted_tables\nPamguard_database_sqlite3\n\nResults\n\n3_Localize\n\nData\n\nCrosscorrelograms\nGPSandPos_info\nPamguard_detections\nRaw_GPSandArray_info\nTDOA_tracks\n\nResults",
+    "text": "Encounter Information: Link to AC_FKW_Encounters\nProcessed Data: Stored C:\\FKW_Outputs\nCopy of Blank Folder Structure Below: Stored \\\\PICCRPNAS\\CRP2\\McCullough\\CRP_PC_TowedArray\\_Blank_Folder_Setup\n\nName the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)\nSetup folder structure for each encounter:\n\n1_TDOA\n\nData\n\nRaw_CrossCorrelogram\n\nResults\n\n2_Extract-PG\n\nData\n\nExtracted_tables\nPamguard_database_sqlite3\n\nResults\n\n3_Localize\n\nData\n\nCrosscorrelograms\nGPSandPos_info\nPamguard_detections\nRaw_GPSandArray_info\nTDOA_tracks\n\nResults",
     "crumbs": [
       "Metadata"
     ]
@@ -44,7 +44,7 @@
     "href": "content/Metadata.html#towed-array-data",
     "title": "Metadata",
     "section": "",
-    "text": "Encounter Information: Link to AC_FKW_Encounters\nProcessed Data: Stored C:\\FKW_Outputs\n\nName the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)\nSetup folder structure for each encounter:\n\n1_TDOA\n\nData\n\nRaw_CrossCorrelogram\n\nResults\n\n2_Extract-PG\n\nData\n\nExtracted_tables\nPamguard_database_sqlite3\n\nResults\n\n3_Localize\n\nData\n\nCrosscorrelograms\nGPSandPos_info\nPamguard_detections\nRaw_GPSandArray_info\nTDOA_tracks\n\nResults",
+    "text": "Encounter Information: Link to AC_FKW_Encounters\nProcessed Data: Stored C:\\FKW_Outputs\nCopy of Blank Folder Structure Below: Stored \\\\PICCRPNAS\\CRP2\\McCullough\\CRP_PC_TowedArray\\_Blank_Folder_Setup\n\nName the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)\nSetup folder structure for each encounter:\n\n1_TDOA\n\nData\n\nRaw_CrossCorrelogram\n\nResults\n\n2_Extract-PG\n\nData\n\nExtracted_tables\nPamguard_database_sqlite3\n\nResults\n\n3_Localize\n\nData\n\nCrosscorrelograms\nGPSandPos_info\nPamguard_detections\nRaw_GPSandArray_info\nTDOA_tracks\n\nResults",
     "crumbs": [
       "Metadata"
     ]
