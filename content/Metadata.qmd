@@ -8,6 +8,8 @@ title: Metadata
 
 -   **Processed Data:** Stored `C:\FKW_Outputs`
 
+-   **Copy of Blank Folder Structure Below:** Stored `\\PICCRPNAS\CRP2\McCullough\CRP_PC_TowedArray\_Blank_Folder_Setup`
+
 Name the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)
 
 Setup folder structure for each encounter:
