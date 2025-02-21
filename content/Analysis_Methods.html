@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.41">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,8 +37,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-48ffa3e5b9d089919c6712c39e5b00f2.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-71390cc8b9bae10139428574d3aab2c6.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-1fe567ac71dadc20879b050b908cdae5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -183,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="encounter-processing-steps" class="level2">
 <h2 class="anchored" data-anchor-id="encounter-processing-steps">Encounter Processing Steps</h2>
 <ol type="1">
-<li><p>Start with <strong>TDOA_tracking_master</strong>. Set all directory paths and parameters using the ReadMe instructions for the package.</p></li>
+<li><p>Start with <strong>TDOA_tracking_master</strong>. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the <a href="https://github.com/noaa-pifsc/CRP_PC_TowedArray/tree/main/supplement">supplement folder</a>.</p></li>
 <li><p>In <code>Specify_Parameters4Xcorr.m</code> check the name of the array against the list in <code>Array_Info.cvs</code>. If the array design required is not listed add it to the list. Specify Encounter has the following naming structure: 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles). Example: 1705279P1 (HICEAS17-Lasker AC279 both)</p></li>
 <li><p>Add the following code to line 111 of the <code>A2_ExtractMeasurements_and_TrackTDOAs.m</code> file… <img src="../images/TDOA_AddCode.PNG" class="img-fluid"></p></li>
 <li><p>Set signals to be processed to clicks, whistles, or both in line 16 of <code>A1_Compute_CrossCorrelogram.m</code>. The first choice is both, but in some cases only one signal type was detected in the encounter.</p></li>
@@ -195,10 +195,10 @@ ul.task-list li input[type="checkbox"] {
 <code>% Specify if you want to forward-backward smooth labels of the estimates % (can help resolve some deviations of the tracks when multiple estimates % get assigned the same label at the same time step): to use the smoother % choose true, otherwise choose false: parameters.rts=false; %(true/false)</code></p>
 <p>The default will be false, but if you want to use the forward/backward smoothing then specify <code>true</code>.</p>
 <p>From Pina Gruden: Again, a word of caution- like any smoothing algorithm, it will impact results if you use it or not. My personal preference is not to use the smoothing, but for the “problematic” examples like you had above, it could help. I still think, that for “problematic” examples, where assumptions are violated, a different solution would be preferable in long term.</p></li>
-<li><p>Next follow the instructions for <strong>Extract_Pamguard_detections</strong> if PAMGuard data was collected for the encounter. Set all directory paths and parameters using the ReadMe instructions for the package. Note that sqlite file will be need to be copied into the folder structure for processing.</p></li>
+<li><p>Next follow the instructions for <strong>Extract_Pamguard_detections</strong> if PAMGuard data was collected for the encounter. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the <a href="https://github.com/noaa-pifsc/CRP_PC_TowedArray/tree/main/supplement">supplement folder</a>. Note that sqlite file will be need to be copied into the folder structure for processing.</p></li>
 <li><p>Run <code>A1_Extract_Tables_from_SQLite.m</code> (Should be relatively quick)</p></li>
 <li><p>Run <code>A2_Extract_Detections_Info.m</code> (Should be relatively quick)</p></li>
-<li><p>Lastly, follow the instructions for <strong>Localization_Towed_Array</strong>. Set all directory paths and parameters using the ReadMe instructions for the package. Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.</p></li>
+<li><p>Lastly, follow the instructions for <strong>Localization_Towed_Array</strong>. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the <a href="https://github.com/noaa-pifsc/CRP_PC_TowedArray/tree/main/supplement">supplement folder</a>. Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.</p></li>
 <li><p>Run <code>A0_GetGPSData.m</code> (this takes a bit of time)</p></li>
 <li><p>Run <code>A0_SetUp.m</code> (Should be relatively quick)</p></li>
 <li><p>Example output…<img src="../images/Localize_A0_Fig1-2.PNG" class="img-fluid"></p></li>
