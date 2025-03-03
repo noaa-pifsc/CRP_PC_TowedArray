@@ -14,7 +14,7 @@ title: Analysis Methods
 
 1.  Start with **TDOA_tracking_master**. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the [supplement folder](https://github.com/noaa-pifsc/CRP_PC_TowedArray/tree/main/supplement).
 
-2.  In `Specify_Paths.m` note that encounters are processed at a folder level. You cannot select individual file, so wav files need to be foldered to contain only that encounters recordings. Root folder for false killer whale recordings is found here... `\\PICCRPNAS\CRP3\FKW\_TA_Recordings`
+2.  In `Specify_Paths.m` note that encounters are processed at a folder level. You cannot select individual file, so wav files need to be foldered to contain only that encounters recordings. Root folder for false killer whale recordings is found here... `\\PICCRPNAS\CRP3\FKW_TA_Recordings`
 
 3.  In `Specify_Parameters4Xcorr.m` check the name of the array against the list in `Array_Info.cvs`. If the array design required is not listed add it to the list. Specify Encounter has the following naming structure: 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles). Example: 1705279P1 (HICEAS17-Lasker AC279 both)
 
