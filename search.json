@@ -4,14 +4,20 @@
     "href": "content/BANTER_Predict.html",
     "title": "BANTER Model Predition Methods",
     "section": "",
-    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals with a detector\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz"
+    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals with a detector\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz",
+    "crumbs": [
+      "BANTER Predict"
+    ]
   },
   {
     "objectID": "content/BANTER_Predict.html#methods",
     "href": "content/BANTER_Predict.html#methods",
     "title": "BANTER Model Predition Methods",
     "section": "",
-    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals with a detector\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz"
+    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals with a detector\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz",
+    "crumbs": [
+      "BANTER Predict"
+    ]
   },
   {
     "objectID": "content/Metadata.html",
