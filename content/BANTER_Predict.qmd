@@ -10,3 +10,5 @@ title: BANTER Model Predition Methods
     -   \>10 signals with a detector
     -   Whistles contours are primarily between 4 & 9 kHz with 0.5 sec duration
     -   Echolocation signals are primarily between 12 & 22 kHz
+
+![](/images/PredictionScores-iters3-sigs10-40000Nov2024.png){fig-align="left"}

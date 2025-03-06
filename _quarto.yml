@@ -43,6 +43,8 @@ website:
         text: "Metadata"
       - href: content/Analysis_Methods.qmd
         text: "Analysis_Methods"
+      - href: content/BANTER_Predict.qmd
+        text: "BANTER Predict"
       - href: content/folderStructure.qmd
         text: "GitHub Folder Structure & Content"
 
