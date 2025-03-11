@@ -37,24 +37,26 @@ title: Analysis Methods
 
     From Pina Gruden: Again, a word of caution- like any smoothing algorithm, it will impact results if you use it or not. My personal preference is not to use the smoothing, but for the "problematic" examples like you had above, it could help. I still think, that for "problematic" examples, where assumptions are violated, a different solution would be preferable in long term.
 
-11. Next follow the instructions for **Extract_Pamguard_detections** if PAMGuard data was collected for the encounter. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the [supplement folder](https://github.com/noaa-pifsc/CRP_PC_TowedArray/tree/main/supplement). Note that sqlite file will be need to be copied into the folder structure for processing.
+11. If smoothing was applied change the name to contain a "s" at the end. Example: 1705279P1s (HICEAS17-Lasker AC279 both, smoothed)
 
-12. Run `A1_Extract_Tables_from_SQLite.m` (Should be relatively quick)
+12. Next follow the instructions for **Extract_Pamguard_detections** if PAMGuard data was collected for the encounter. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the [supplement folder](https://github.com/noaa-pifsc/CRP_PC_TowedArray/tree/main/supplement). Note that sqlite file will be need to be copied into the folder structure for processing.
 
-13. Run `A2_Extract_Detections_Info.m` (Should be relatively quick)
+13. Run `A1_Extract_Tables_from_SQLite.m` (Should be relatively quick)
 
-14. Lastly, follow the instructions for **Localization_Towed_Array**. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the [supplement folder](https://github.com/noaa-pifsc/CRP_PC_TowedArray/tree/main/supplement). Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.
+14. Run `A2_Extract_Detections_Info.m` (Should be relatively quick)
 
-15. Run `A0_GetGPSData.m` (this takes a bit of time)
+15. Lastly, follow the instructions for **Localization_Towed_Array**. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the [supplement folder](https://github.com/noaa-pifsc/CRP_PC_TowedArray/tree/main/supplement). Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.
 
-16. Run `A0_SetUp.m` (Should be relatively quick)
+16. Run `A0_GetGPSData.m` (this takes a bit of time)
 
-17. Example output...![](/images/Localize_A0_Fig1-2.PNG)
+17. Run `A0_SetUp.m` (Should be relatively quick)
 
-18. Run `A1_Localize.m`. As tracks are selected for localization, keep track in an Excel file the combinations used in case the package crashes while trying to process the next set of tracks. Track data is not saved until the end where the compiled Loc_Plot is generated.
+18. Example output...![](/images/Localize_A0_Fig1-2.PNG)
 
-19. Example output... TDOA_Tracks![](/images/Localize_A1_FinalTracks.PNG)
+19. Run `A1_Localize.m`. As tracks are selected for localization, keep track in an Excel file the combinations used in case the package crashes while trying to process the next set of tracks. Track data is not saved until the end where the compiled Loc_Plot is generated.
 
-20. Example output... Loc_Plot![](/images/Localize_A1_FinalMap.PNG)
+20. Example output... TDOA_Tracks![](/images/Localize_A1_FinalTracks.PNG)
 
-21. At the end save 3 things before closing out of Matlab... `writetable(Loc_table,'Loc_table.csv')`; Save As –\> `TDOA_Tracks_Plot.jpeg`; Save As –\> `Loc_Plot.fig`
+21. Example output... Loc_Plot![](/images/Localize_A1_FinalMap.PNG)
+
+22. At the end save 3 things before closing out of Matlab... `writetable(Loc_table,'Loc_table.csv')`; Save As –\> `TDOA_Tracks_Plot.jpeg`; Save As –\> `Loc_Plot.fig`
