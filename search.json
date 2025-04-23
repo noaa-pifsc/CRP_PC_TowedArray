@@ -1,45 +1,5 @@
 [
   {
-    "objectID": "content/BANTER_Predict.html",
-    "href": "content/BANTER_Predict.html",
-    "title": "BANTER Model Predition Methods",
-    "section": "",
-    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals with a detector\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz",
-    "crumbs": [
-      "BANTER Predict"
-    ]
-  },
-  {
-    "objectID": "content/BANTER_Predict.html#methods",
-    "href": "content/BANTER_Predict.html#methods",
-    "title": "BANTER Model Predition Methods",
-    "section": "",
-    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals with a detector\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz",
-    "crumbs": [
-      "BANTER Predict"
-    ]
-  },
-  {
-    "objectID": "content/Metadata.html",
-    "href": "content/Metadata.html",
-    "title": "Metadata",
-    "section": "",
-    "text": "Encounter Information: Link to AC_FKW_Encounters\nProcessed Data: Stored C:\\FKW_Outputs\nCopy of Blank Folder Structure Below: Stored \\\\PICCRPNAS\\CRP2\\McCullough\\CRP_PC_TowedArray\\_Blank_Folder_Setup\n\nName the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)\nSetup folder structure for each encounter:\n\n1_TDOA\n\nData\n\nRaw_CrossCorrelogram\n\nResults\n\n2_Extract-PG\n\nData\n\nExtracted_tables\nPamguard_database_sqlite3\n\nResults\n\n3_Localize\n\nData\n\nCrosscorrelograms\nGPSandPos_info\nPamguard_detections\nRaw_GPSandArray_info\nTDOA_tracks\n\nResults",
-    "crumbs": [
-      "Metadata"
-    ]
-  },
-  {
-    "objectID": "content/Metadata.html#towed-array-data",
-    "href": "content/Metadata.html#towed-array-data",
-    "title": "Metadata",
-    "section": "",
-    "text": "Encounter Information: Link to AC_FKW_Encounters\nProcessed Data: Stored C:\\FKW_Outputs\nCopy of Blank Folder Structure Below: Stored \\\\PICCRPNAS\\CRP2\\McCullough\\CRP_PC_TowedArray\\_Blank_Folder_Setup\n\nName the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)\nSetup folder structure for each encounter:\n\n1_TDOA\n\nData\n\nRaw_CrossCorrelogram\n\nResults\n\n2_Extract-PG\n\nData\n\nExtracted_tables\nPamguard_database_sqlite3\n\nResults\n\n3_Localize\n\nData\n\nCrosscorrelograms\nGPSandPos_info\nPamguard_detections\nRaw_GPSandArray_info\nTDOA_tracks\n\nResults",
-    "crumbs": [
-      "Metadata"
-    ]
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
@@ -97,36 +57,6 @@
     "text": "References\nBradford AL, Becker E, Oleson EM, Forney K, Moore J, Barlow J. 2020. “Abundance estimates of false killer whales in Hawaiian waters and the broader central pacific,” NOAA Tech Memo NMFS-PIFSC-104\nMcCullough, Jennifer L. K., Anne E. Simonis, Taiki Sakai, and Erin M. Oleson. 2021. “Acoustic Classification of False Killer Whales in the Hawaiian Islands Based on Comprehensive Vocal Repertoire.” JASA Express Letters 1 (7). https://doi.org/10.1121/10.0005512.\nYano KM, Oleson EM, Keating JL, Balance LT, Hill MC, Bradford AL, Allen AN, Joyce TW, Moore JE, Henry A. 2018. “Cetacean and Seabird Data Collected During the Hawaiian Islands Cetacean and Ecosystem Assessment Survey (HICEAS), July-December 2017.” NOAA Tech Memo NMFS-PIFSC-72",
     "crumbs": [
       "Home"
-    ]
-  },
-  {
-    "objectID": "content/Analysis_Methods.html",
-    "href": "content/Analysis_Methods.html",
-    "title": "Analysis Methods",
-    "section": "",
-    "text": "1_TDOA: TDOA_tracking_master\n2_Extract-PG: Extract_Pamguard_detections\n3_Localize: Localization_Towed_Array",
-    "crumbs": [
-      "Analysis_Methods"
-    ]
-  },
-  {
-    "objectID": "content/Analysis_Methods.html#matlab-code",
-    "href": "content/Analysis_Methods.html#matlab-code",
-    "title": "Analysis Methods",
-    "section": "",
-    "text": "1_TDOA: TDOA_tracking_master\n2_Extract-PG: Extract_Pamguard_detections\n3_Localize: Localization_Towed_Array",
-    "crumbs": [
-      "Analysis_Methods"
-    ]
-  },
-  {
-    "objectID": "content/Analysis_Methods.html#encounter-processing-steps",
-    "href": "content/Analysis_Methods.html#encounter-processing-steps",
-    "title": "Analysis Methods",
-    "section": "Encounter Processing Steps",
-    "text": "Encounter Processing Steps\n\nStart with TDOA_tracking_master. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the supplement folder.\nIn Specify_Paths.m note that encounters are processed at a folder level. You cannot select individual file, so wav files need to be foldered to contain only that encounters recordings. Root folder for false killer whale recordings is found here… \\\\PICCRPNAS\\CRP3\\FKW_TA_Recordings\nIn Specify_Parameters4Xcorr.m check the name of the array against the list in Array_Info.cvs. If the array design required is not listed add it to the list. Specify Encounter has the following naming structure: 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles). Example: 1705279P1 (HICEAS17-Lasker AC279 both)\nAdd the following code to line 111 of the A2_ExtractMeasurements_and_TrackTDOAs.m file… \nSet signals to be processed to clicks, whistles, or both in line 16 of A1_Compute_CrossCorrelogram.m. The first choice is both, but in some cases only one signal type was detected in the encounter.\nRun A1_Compute_CrossCorrelogram.m. Note that this will take a while and if both signal types are being processed it will going through all the file types twice.\nExample output (Note it will most likely always look faint at this stage)… \nRun A2_ExtractMeasurements_and_TrackTDOAs.m. This file should be much faster and if not run quickly then something was processed incorrectly.\nExample output…\nIf the TDOA tracks look problematic then open Specify_Parameters4Tracking.m you now have another changeable parameter called parameters.rts (lines 103-107):\n% Specify if you want to forward-backward smooth labels of the estimates % (can help resolve some deviations of the tracks when multiple estimates % get assigned the same label at the same time step): to use the smoother % choose true, otherwise choose false: parameters.rts=false; %(true/false)\nThe default will be false, but if you want to use the forward/backward smoothing then specify true.\nFrom Pina Gruden: Again, a word of caution- like any smoothing algorithm, it will impact results if you use it or not. My personal preference is not to use the smoothing, but for the “problematic” examples like you had above, it could help. I still think, that for “problematic” examples, where assumptions are violated, a different solution would be preferable in long term.\nIf smoothing was applied change the name to contain a “s” at the end. Example: 1705279P1s (HICEAS17-Lasker AC279 both, smoothed)\nNext follow the instructions for Extract_Pamguard_detections if PAMGuard data was collected for the encounter. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the supplement folder. Note that sqlite file will be need to be copied into the folder structure for processing.\nRun A1_Extract_Tables_from_SQLite.m (Should be relatively quick)\nRun A2_Extract_Detections_Info.m (Should be relatively quick)\nLastly, follow the instructions for Localization_Towed_Array. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the supplement folder. Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.\nRun A0_GetGPSData.m (this takes a bit of time)\nRun A0_SetUp.m (Should be relatively quick)\nExample output…\nRun A1_Localize.m. As tracks are selected for localization, keep track in an Excel file the combinations used in case the package crashes while trying to process the next set of tracks. Track data is not saved until the end where the compiled Loc_Plot is generated.\nExample output… TDOA_Tracks\nExample output… Loc_Plot\nAt the end save 3 things before closing out of Matlab… writetable(Loc_table,'Loc_table.csv'); Save As –&gt; TDOA_Tracks_Plot.jpeg; Save As –&gt; Loc_Plot.fig",
-    "crumbs": [
-      "Analysis_Methods"
     ]
   },
   {
@@ -217,6 +147,76 @@
     "text": "📁 supplement\nSupplementary files that are not data, script, or components of the manuscript.",
     "crumbs": [
       "GitHub Folder Structure & Content"
+    ]
+  },
+  {
+    "objectID": "content/Metadata.html",
+    "href": "content/Metadata.html",
+    "title": "Metadata",
+    "section": "",
+    "text": "Encounter Information: Link to AC_FKW_Encounters\nProcessed Data: Stored C:\\FKW_Outputs\nCopy of Blank Folder Structure Below: Stored \\\\PICCRPNAS\\CRP2\\McCullough\\CRP_PC_TowedArray\\_Blank_Folder_Setup\n\nName the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)\nSetup folder structure for each encounter:\n\n1_TDOA\n\nData\n\nRaw_CrossCorrelogram\n\nResults\n\n2_Extract-PG\n\nData\n\nExtracted_tables\nPamguard_database_sqlite3\n\nResults\n\n3_Localize\n\nData\n\nCrosscorrelograms\nGPSandPos_info\nPamguard_detections\nRaw_GPSandArray_info\nTDOA_tracks\n\nResults",
+    "crumbs": [
+      "Metadata"
+    ]
+  },
+  {
+    "objectID": "content/Metadata.html#towed-array-data",
+    "href": "content/Metadata.html#towed-array-data",
+    "title": "Metadata",
+    "section": "",
+    "text": "Encounter Information: Link to AC_FKW_Encounters\nProcessed Data: Stored C:\\FKW_Outputs\nCopy of Blank Folder Structure Below: Stored \\\\PICCRPNAS\\CRP2\\McCullough\\CRP_PC_TowedArray\\_Blank_Folder_Setup\n\nName the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)\nSetup folder structure for each encounter:\n\n1_TDOA\n\nData\n\nRaw_CrossCorrelogram\n\nResults\n\n2_Extract-PG\n\nData\n\nExtracted_tables\nPamguard_database_sqlite3\n\nResults\n\n3_Localize\n\nData\n\nCrosscorrelograms\nGPSandPos_info\nPamguard_detections\nRaw_GPSandArray_info\nTDOA_tracks\n\nResults",
+    "crumbs": [
+      "Metadata"
+    ]
+  },
+  {
+    "objectID": "content/BANTER_Predict.html",
+    "href": "content/BANTER_Predict.html",
+    "title": "BANTER Model Predition Methods",
+    "section": "",
+    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals with a detector\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz",
+    "crumbs": [
+      "BANTER Predict"
+    ]
+  },
+  {
+    "objectID": "content/BANTER_Predict.html#methods",
+    "href": "content/BANTER_Predict.html#methods",
+    "title": "BANTER Model Predition Methods",
+    "section": "",
+    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals with a detector\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz",
+    "crumbs": [
+      "BANTER Predict"
+    ]
+  },
+  {
+    "objectID": "content/Analysis_Methods.html",
+    "href": "content/Analysis_Methods.html",
+    "title": "Analysis Methods",
+    "section": "",
+    "text": "1_TDOA: TDOA_tracking_master\n2_Extract-PG: Extract_Pamguard_detections\n3_Localize: Localization_Towed_Array",
+    "crumbs": [
+      "Analysis_Methods"
+    ]
+  },
+  {
+    "objectID": "content/Analysis_Methods.html#matlab-code",
+    "href": "content/Analysis_Methods.html#matlab-code",
+    "title": "Analysis Methods",
+    "section": "",
+    "text": "1_TDOA: TDOA_tracking_master\n2_Extract-PG: Extract_Pamguard_detections\n3_Localize: Localization_Towed_Array",
+    "crumbs": [
+      "Analysis_Methods"
+    ]
+  },
+  {
+    "objectID": "content/Analysis_Methods.html#encounter-processing-steps",
+    "href": "content/Analysis_Methods.html#encounter-processing-steps",
+    "title": "Analysis Methods",
+    "section": "Encounter Processing Steps",
+    "text": "Encounter Processing Steps\n\nStart with TDOA_tracking_master. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the supplement folder.\nIn Specify_Paths.m note that encounters are processed at a folder level. You cannot select individual file, so wav files need to be foldered to contain only that encounters recordings. Root folder for false killer whale recordings is found here… \\\\PICCRPNAS\\CRP3\\FKW_TA_Recordings\nIn Specify_Parameters4Xcorr.m check the name of the array against the list in Array_Info.cvs. If the array design required is not listed add it to the list. Specify Encounter has the following naming structure: 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles). Example: 1705279P1 (HICEAS17-Lasker AC279 both)\nAdd the following code to line 111 of the A2_ExtractMeasurements_and_TrackTDOAs.m file… \nSet signals to be processed to clicks, whistles, or both in line 16 of A1_Compute_CrossCorrelogram.m. The first choice is both, but in some cases only one signal type was detected in the encounter.\nRun A1_Compute_CrossCorrelogram.m. Note that this will take a while and if both signal types are being processed it will going through all the file types twice.\nExample output (Note it will most likely always look faint at this stage)… \nRun A2_ExtractMeasurements_and_TrackTDOAs.m. This file should be much faster and if not run quickly then something was processed incorrectly.\nExample output…\nIf the TDOA tracks look problematic then open Specify_Parameters4Tracking.m you now have another changeable parameter called parameters.rts (lines 103-107):\n% Specify if you want to forward-backward smooth labels of the estimates % (can help resolve some deviations of the tracks when multiple estimates % get assigned the same label at the same time step): to use the smoother % choose true, otherwise choose false: parameters.rts=false; %(true/false)\nThe default will be false, but if you want to use the forward/backward smoothing then specify true.\nFrom Pina Gruden: Again, a word of caution- like any smoothing algorithm, it will impact results if you use it or not. My personal preference is not to use the smoothing, but for the “problematic” examples like you had above, it could help. I still think, that for “problematic” examples, where assumptions are violated, a different solution would be preferable in long term.\nIf smoothing was applied change the name to contain a “s” at the end. Example: 1705279P1s (HICEAS17-Lasker AC279 both, smoothed)\nNext follow the instructions for Extract_Pamguard_detections if PAMGuard data was collected for the encounter. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the supplement folder. Note that sqlite file will be need to be copied into the folder structure for processing.\nRun A1_Extract_Tables_from_SQLite.m (Should be relatively quick)\nRun A2_Extract_Detections_Info.m (Should be relatively quick)\nLastly, follow the instructions for Localization_Towed_Array. Set all directory paths and parameters using the ReadMe instructions for the package OR the full manual in pdf format folder in the supplement folder. Copy required files generated from previous packages that were saved in 1_TDOA and 2_Extract-PG into the folder structure of 3_Localize.\nRun A0_GetGPSData.m (this takes a bit of time)\nRun A0_SetUp.m (Should be relatively quick)\nExample output…\nRun A1_Localize.m. As tracks are selected for localization, keep track in an Excel file the combinations used in case the package crashes while trying to process the next set of tracks. Track data is not saved until the end where the compiled Loc_Plot is generated.\nExample output… TDOA_Tracks\nExample output… Loc_Plot\nAt the end save 3 things before closing out of Matlab… writetable(Loc_table,'Loc_table.csv'); Save As –&gt; TDOA_Tracks_Plot.jpeg; Save As –&gt; Loc_Plot.fig",
+    "crumbs": [
+      "Analysis_Methods"
     ]
   }
 ]
