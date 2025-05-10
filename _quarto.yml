@@ -45,6 +45,8 @@ website:
         text: "Analysis_Methods"
       - href: content/BANTER_Predict.qmd
         text: "BANTER Predict"
+      - href: content/Data_ReadMe.qmd
+        text: "Data ReadMe"
       - href: content/folderStructure.qmd
         text: "GitHub Folder Structure & Content"
 
