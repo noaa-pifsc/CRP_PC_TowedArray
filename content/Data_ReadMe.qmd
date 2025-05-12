@@ -11,17 +11,17 @@ title: Data ReadMe
 -   **Columns:**
 
     | Column Name | Description | Use for Detection Function |
-    |-------------------------|----------------------------------------------------------|:---------------------------:|
+    |------------------|-------------------------------------------|:----------------:|
     | TrackID_1 (1,2,3,etc) | *Track ID number used for the TRACE* | **YES** |
     | Loc_start_time | *Start time from 1st track in the TRACE sequence (Time adjusted if track started at a bearing angle \<30 degrees)* | **YES** |
     | Loc_end_time | *End time from last track in the TRACE sequence (Time adjusted if track ended at a bearing angle \>120 degrees)* | **YES** |
-    | Loc_beam_time | *Time when the TRACE crosses the beam (87 to 93 degrees). NOTE:*  *Localizations that show up with this date time (*`14-Jul-1916 00:00:00`*) in the end Loc_table do not have a beam time.* | **YES** |
+    | Loc_beam_time | *Time when the TRACE crosses the beam (87 to 93 degrees). NOTE:* *Localizations that show up with this date time (*`14-Jul-1916 00:00:00`*) in the end Loc_table do not have a beam time.* | **YES** |
     | Loc_m_1 | *X: Localization estimate in Cartesian coordinates with respect to start of boat track (meters)* |  |
     | Loc_m_2 | *Y: Localization estimate in Cartesian coordinates with respect to start of boat track (meters)* |  |
-    | Loc_m_min_1 | *min of  Loc_m_1* |  |
-    | Loc_m_min_2 | *min of  Loc_m_2* |  |
-    | Loc_m_max_1 | *max of  Loc_m_1* |  |
-    | Loc_m_max_2 | *max of  Loc_m_2* |  |
+    | Loc_m_min_1 | *min of Loc_m_1* |  |
+    | Loc_m_min_2 | *min of Loc_m_2* |  |
+    | Loc_m_max_1 | *max of Loc_m_1* |  |
+    | Loc_m_max_2 | *max of Loc_m_2* |  |
     | Loc_LatLong_1 | *LAT: Localization estimate as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.* |  |
     | Loc_LatLong_2 | *LON: Localization estimate as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.* |  |
     | Loc_m_dilated_1 | *X: Localization estimate from dilated AS in Cartesian coordinates with respect to start of boat track (meters)* |  |

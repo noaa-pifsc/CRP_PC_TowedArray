@@ -16,21 +16,21 @@ Acoustic Data - Towed hydrophone array using largest spacing possible (Ranging \
 
 -   Visually confirmed detections of false killer whales (*Pseudorca crassidens*) collected during survey efforts throughout the Hawaiian Islands in 2017 (DCLDE 2022 dataset; Yano et al. 2018)
 
--   Acoustic only encounters were confirmed with the [*banter*](https://github.com/EricArcher/banter){target="_blank"} classifier published in McCullough et al. 2021. 
+-   Acoustic only encounters were confirmed with the [*banter*](https://github.com/EricArcher/banter){target="_blank"} classifier published in McCullough et al. 2021. [BANTER_Predict](https://github.com/jlkeating/BANTER_Predict){target="_blank"}
 
--   Encounters ranged from 1 to 2 hours while the ship traveled at 10 knots without turning
+-   Encounters ranged from at few minutes to 2 hours while the ship traveled at 10 knots without turning
+
+-   Sensitivity analysis manuscript (Barkley et al. in prep) defines what "usable" encounters (events) are and how we validated acoustic encounters of false killer whales that had no visual indentification. 
 
 ## Analysis Steps
 
--   Time-Difference-Of-Arrivals (TDOAs) for all FKW signals were automatically extracted and then aggregated into continuous tracks based on consistent TDOA trajectories using a multi-target Bayesian framework. (Custom MATLAB Script, Gruden)
+-   Time-Difference-Of-Arrivals (TDOAs) for all FKW signals were automatically extracted into tracks and then aggregated into continuous TRACES based on consistent TDOA trajectories using a multi-target Bayesian framework. (Custom MATLAB Script, Gruden et al. 2021 & 2023) [TDOA_tracking_master](https://github.com/PinaGruden/TDOA_tracking_master){target="_blank"}
 
--   Both echolocation clicks and whistles were combined during analysis to generate complete tracks.
+-   Localization of the TRACES was done using modified localization Matlab code from Barkley et al.(2021) by Pina Gruden [Localization_Towed_Array](https://github.com/PinaGruden/Localization_Towed_Array){target="_blank"}.
 
--   Visual sighting time and bearing information was placed within the TDOA tracks to examine how well the modalities align in identifying subgroups.
+-   Either both (echolocation clicks & whistles), echolocation clicks only, or whistles only were used during analysis to generate complete TRACES
 
--   Perpendicular distance to the trackline was computed at the beam for acoustically-detected subgroups, allowing for comparison to the visual detection function.
-
--   Subgroups detected forward of the beam that aligned visually and acoustically, the perpendicular distances were compared to assess animal movement.
+-   Perpendicular distance to the trackline was computed at the beam for acoustically-detected TRACES, creating an acoustic detection function.
 
 ## Project Time
 
@@ -38,7 +38,13 @@ Acoustic Data - Towed hydrophone array using largest spacing possible (Ranging \
 
 ## References
 
+*Barkley, Yvonne M., Eva-Marie Nosal, and Erin M. Oleson. 2021. “Model-Based Localization of Deep-Diving Cetaceans Using Towed Line Array Acoustic Data.” The Journal of the Acoustical Society of America 150 (2): 1120.*
+
 *Bradford AL, Becker E, Oleson EM, Forney K, Moore J, Barlow J. 2020. “Abundance estimates of false killer whales in Hawaiian waters and the broader central pacific,” NOAA Tech Memo NMFS-PIFSC-104*
+
+*Gruden, Pina, Y. M. Barkley, and J. L. K. McCullough. 2023. “Vocal Behavior of False Killer Whale (Pseudorca Crassidens) Acoustic Subgroups.” Frontiers in Marine Science 10:1147670. https://doi.org/10.3389/fmars.2023.1147670.*
+
+*Gruden, P., Nosal, E.-M., and Oleson, E. (2021). Tracking time differences of arrivals of multiple sound sources in the presence of clutter and missed detections. J. Acoust. Soc. America 150 (5), 3399–3416. doi: 10.1121/10.0006780*
 
 *McCullough, Jennifer L. K., Anne E. Simonis, Taiki Sakai, and Erin M. Oleson. 2021. “Acoustic Classification of False Killer Whales in the Hawaiian Islands Based on Comprehensive Vocal Repertoire.” JASA Express Letters 1 (7). https://doi.org/10.1121/10.0005512.*
 
