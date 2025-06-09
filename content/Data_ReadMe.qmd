@@ -11,7 +11,7 @@ title: Data ReadMe
 -   **Columns:**
 
     | Column Name | Description | Use for Detection Function |
-    |------------------|-------------------------------------------|:----------------:|
+    |----|----|:--:|
     | TrackID_1 (1,2,3,etc) | *Track ID number used for the TRACE* | **YES** |
     | Loc_start_time | *Start time from 1st track in the TRACE sequence (Time adjusted if track started at a bearing angle \<30 degrees)* | **YES** |
     | Loc_end_time | *End time from last track in the TRACE sequence (Time adjusted if track ended at a bearing angle \>120 degrees)* | **YES** |
