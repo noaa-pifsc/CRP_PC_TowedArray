@@ -1,5 +1,45 @@
 [
   {
+    "objectID": "content/Data_ReadMe.html",
+    "href": "content/Data_ReadMe.html",
+    "title": "Data ReadMe",
+    "section": "",
+    "text": "Filenmae Structure: 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles), Loc_table.csv. Example: 1705279P1_Loc_table.csv (HICEAS17-Lasker AC279 both)\nRows: Localization data for each TRACE.\nColumns:\n\n\n\n\n\n\n\n\nColumn Name\nDescription\nUse for Detection Function\n\n\n\n\nTrackID_1 (1,2,3,etc)\nTrack ID number used for the TRACE\nYES\n\n\nLoc_start_time\nStart time from 1st track in the TRACE sequence (Time adjusted if track started at a bearing angle &lt;30 degrees)\nYES\n\n\nLoc_end_time\nEnd time from last track in the TRACE sequence (Time adjusted if track ended at a bearing angle &gt;120 degrees)\nYES\n\n\nLoc_beam_time\nTime when the TRACE crosses the beam (87 to 93 degrees). NOTE: Localizations that show up with this date time (14-Jul-1916 00:00:00) in the end Loc_table do not have a beam time.\nYES\n\n\nLoc_m_1\nX: Localization estimate in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_2\nY: Localization estimate in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_min_1\nmin of Loc_m_1\n\n\n\nLoc_m_min_2\nmin of Loc_m_2\n\n\n\nLoc_m_max_1\nmax of Loc_m_1\n\n\n\nLoc_m_max_2\nmax of Loc_m_2\n\n\n\nLoc_LatLong_1\nLAT: Localization estimate as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_LatLong_2\nLON: Localization estimate as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_m_dilated_1\nX: Localization estimate from dilated AS in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_dilated_2\nY: Localization estimate from dilated AS in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_dilated_min_1\nmin of Loc_m_dilated_1\n\n\n\nLoc_m_dilated_min_2\nmin of Loc_m_dilated_2\n\n\n\nLoc_m_dilated_max_1\nmax of Loc_m_dilated_1\n\n\n\nLoc_m_dilated_max_2\nmax of Loc_m_dilated_2\n\n\n\nLoc_LatLong_dilated_1\nLAT: Localization estimate from dilated AS as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_LatLong_dilated_2\nLON: Localization estimate from dilated AS as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\ndistance_m\nPerpendicular distance from localization estimate (Loc_m) to the array (meters)\n\n\n\ndistance_m_minmax_1\nmin of distance_m\n\n\n\ndistance_m_minmax_2\nmax of distance_m\n\n\n\ndistance_m_dilated\nPerpendicular distance from localization estimate from dilated AS (Loc_m_dilated) to the array (meters). Currently calibrated for false killer whales (swim speed, etc.)\nYES\n\n\ndistance_m_dilated_minmax_1\nmin of distance_m_dilated\nYES\n\n\ndistance_m_dilated_minmax_2\nmax of distance_m_dilated\nYES",
+    "crumbs": [
+      "Data ReadMe"
+    ]
+  },
+  {
+    "objectID": "content/Data_ReadMe.html#loc_table-csvs",
+    "href": "content/Data_ReadMe.html#loc_table-csvs",
+    "title": "Data ReadMe",
+    "section": "",
+    "text": "Filenmae Structure: 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles), Loc_table.csv. Example: 1705279P1_Loc_table.csv (HICEAS17-Lasker AC279 both)\nRows: Localization data for each TRACE.\nColumns:\n\n\n\n\n\n\n\n\nColumn Name\nDescription\nUse for Detection Function\n\n\n\n\nTrackID_1 (1,2,3,etc)\nTrack ID number used for the TRACE\nYES\n\n\nLoc_start_time\nStart time from 1st track in the TRACE sequence (Time adjusted if track started at a bearing angle &lt;30 degrees)\nYES\n\n\nLoc_end_time\nEnd time from last track in the TRACE sequence (Time adjusted if track ended at a bearing angle &gt;120 degrees)\nYES\n\n\nLoc_beam_time\nTime when the TRACE crosses the beam (87 to 93 degrees). NOTE: Localizations that show up with this date time (14-Jul-1916 00:00:00) in the end Loc_table do not have a beam time.\nYES\n\n\nLoc_m_1\nX: Localization estimate in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_2\nY: Localization estimate in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_min_1\nmin of Loc_m_1\n\n\n\nLoc_m_min_2\nmin of Loc_m_2\n\n\n\nLoc_m_max_1\nmax of Loc_m_1\n\n\n\nLoc_m_max_2\nmax of Loc_m_2\n\n\n\nLoc_LatLong_1\nLAT: Localization estimate as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_LatLong_2\nLON: Localization estimate as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_m_dilated_1\nX: Localization estimate from dilated AS in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_dilated_2\nY: Localization estimate from dilated AS in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_dilated_min_1\nmin of Loc_m_dilated_1\n\n\n\nLoc_m_dilated_min_2\nmin of Loc_m_dilated_2\n\n\n\nLoc_m_dilated_max_1\nmax of Loc_m_dilated_1\n\n\n\nLoc_m_dilated_max_2\nmax of Loc_m_dilated_2\n\n\n\nLoc_LatLong_dilated_1\nLAT: Localization estimate from dilated AS as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_LatLong_dilated_2\nLON: Localization estimate from dilated AS as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\ndistance_m\nPerpendicular distance from localization estimate (Loc_m) to the array (meters)\n\n\n\ndistance_m_minmax_1\nmin of distance_m\n\n\n\ndistance_m_minmax_2\nmax of distance_m\n\n\n\ndistance_m_dilated\nPerpendicular distance from localization estimate from dilated AS (Loc_m_dilated) to the array (meters). Currently calibrated for false killer whales (swim speed, etc.)\nYES\n\n\ndistance_m_dilated_minmax_1\nmin of distance_m_dilated\nYES\n\n\ndistance_m_dilated_minmax_2\nmax of distance_m_dilated\nYES",
+    "crumbs": [
+      "Data ReadMe"
+    ]
+  },
+  {
+    "objectID": "content/BANTER_Predict.html",
+    "href": "content/BANTER_Predict.html",
+    "title": "BANTER Model Predition Methods",
+    "section": "",
+    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters (events) predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals within each detector available within the event\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz",
+    "crumbs": [
+      "BANTER Predict"
+    ]
+  },
+  {
+    "objectID": "content/BANTER_Predict.html#methods",
+    "href": "content/BANTER_Predict.html#methods",
+    "title": "BANTER Model Predition Methods",
+    "section": "",
+    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters (events) predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals within each detector available within the event\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz",
+    "crumbs": [
+      "BANTER Predict"
+    ]
+  },
+  {
     "objectID": "content/Metadata.html",
     "href": "content/Metadata.html",
     "title": "Metadata",
@@ -17,6 +57,66 @@
     "text": "Encounter Information: Link to AC_FKW_Encounters\nProcessed Data: Stored C:\\FKW_Outputs\nCopy of Blank Folder Structure Below: Stored \\\\PICCRPNAS\\CRP2\\McCullough\\CRP_PC_TowedArray\\_Blank_Folder_Setup\n\nName the header folder for encounters with the AC_ID (Crusie#AC; ex. 1705067)\nSetup folder structure for each encounter:\n\n1_TDOA\n\nData\n\nRaw_CrossCorrelogram\n\nResults\n\n2_Extract-PG\n\nData\n\nExtracted_tables\nPamguard_database_sqlite3\n\nResults\n\n3_Localize\n\nData\n\nCrosscorrelograms\nGPSandPos_info\nPamguard_detections\nRaw_GPSandArray_info\nTDOA_tracks\n\nResults",
     "crumbs": [
       "Metadata"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Cetacean Research Program’s analysis efforts to localize false killer whale subgroups from towed hydrophone arrays.\nTo understand movement of false killer whales (FKW) relative to a research vessel by linking visual sightings with towed array acoustic localizations. Evaluating animal movement is important for FKW abundance estimates as movement violates a distance sampling assumption.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#reseach-goals",
+    "href": "index.html#reseach-goals",
+    "title": "Home",
+    "section": "",
+    "text": "Cetacean Research Program’s analysis efforts to localize false killer whale subgroups from towed hydrophone arrays.\nTo understand movement of false killer whales (FKW) relative to a research vessel by linking visual sightings with towed array acoustic localizations. Evaluating animal movement is important for FKW abundance estimates as movement violates a distance sampling assumption.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#dataset",
+    "href": "index.html#dataset",
+    "title": "Home",
+    "section": "Dataset",
+    "text": "Dataset\nAcoustic Data - Towed hydrophone array using largest spacing possible (Ranging ~25 to 45 m)\n\nVisually confirmed detections of false killer whales (Pseudorca crassidens) collected during survey efforts throughout the Hawaiian Islands in 2017 (DCLDE 2022 dataset; Yano et al. 2018)\nAcoustic only encounters were confirmed with the banter classifier published in McCullough et al. 2021. BANTER_Predict\nEncounters ranged from at few minutes to 2 hours while the ship traveled at 10 knots without turning\nSensitivity analysis manuscript (Barkley et al. in prep) defines what “usable” encounters (events) are and how we validated acoustic encounters of false killer whales that had no visual indentification.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#analysis-steps",
+    "href": "index.html#analysis-steps",
+    "title": "Home",
+    "section": "Analysis Steps",
+    "text": "Analysis Steps\n\nTime-Difference-Of-Arrivals (TDOAs) for all FKW signals were automatically extracted into tracks and then aggregated into continuous TRACES based on consistent TDOA trajectories using a multi-target Bayesian framework. (Custom MATLAB Script, Gruden et al. 2021 & 2023) TDOA_tracking_master\nLocalization of the TRACES was done using modified localization Matlab code from Barkley et al.(2021) by Pina Gruden Localization_Towed_Array.\nEither both (echolocation clicks & whistles), echolocation clicks only, or whistles only were used during analysis to generate complete TRACES\nPerpendicular distance to the trackline was computed at the beam for acoustically-detected TRACES, creating an acoustic detection function.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#project-time",
+    "href": "index.html#project-time",
+    "title": "Home",
+    "section": "Project Time",
+    "text": "Project Time\nToolbox Timeline",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#references",
+    "href": "index.html#references",
+    "title": "Home",
+    "section": "References",
+    "text": "References\nBarkley, Yvonne M., Eva-Marie Nosal, and Erin M. Oleson. 2021. “Model-Based Localization of Deep-Diving Cetaceans Using Towed Line Array Acoustic Data.” The Journal of the Acoustical Society of America 150 (2): 1120.\nBradford AL, Becker E, Oleson EM, Forney K, Moore J, Barlow J. 2020. “Abundance estimates of false killer whales in Hawaiian waters and the broader central pacific,” NOAA Tech Memo NMFS-PIFSC-104\nGruden, Pina, Y. M. Barkley, and J. L. K. McCullough. 2023. “Vocal Behavior of False Killer Whale (Pseudorca Crassidens) Acoustic Subgroups.” Frontiers in Marine Science 10:1147670. https://doi.org/10.3389/fmars.2023.1147670.\nGruden, P., Nosal, E.-M., and Oleson, E. (2021). Tracking time differences of arrivals of multiple sound sources in the presence of clutter and missed detections. J. Acoust. Soc. America 150 (5), 3399–3416. doi: 10.1121/10.0006780\nMcCullough, Jennifer L. K., Anne E. Simonis, Taiki Sakai, and Erin M. Oleson. 2021. “Acoustic Classification of False Killer Whales in the Hawaiian Islands Based on Comprehensive Vocal Repertoire.” JASA Express Letters 1 (7). https://doi.org/10.1121/10.0005512.\nYano KM, Oleson EM, Keating JL, Balance LT, Hill MC, Bradford AL, Allen AN, Joyce TW, Moore JE, Henry A. 2018. “Cetacean and Seabird Data Collected During the Hawaiian Islands Cetacean and Ecosystem Assessment Survey (HICEAS), July-December 2017.” NOAA Tech Memo NMFS-PIFSC-72",
+    "crumbs": [
+      "Home"
     ]
   },
   {
@@ -137,106 +237,6 @@
     "text": "📁 supplement\nSupplementary files that are not data, script, or components of the manuscript.",
     "crumbs": [
       "GitHub Folder Structure & Content"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Cetacean Research Program’s analysis efforts to localize false killer whale subgroups from towed hydrophone arrays.\nTo understand movement of false killer whales (FKW) relative to a research vessel by linking visual sightings with towed array acoustic localizations. Evaluating animal movement is important for FKW abundance estimates as movement violates a distance sampling assumption.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#reseach-goals",
-    "href": "index.html#reseach-goals",
-    "title": "Home",
-    "section": "",
-    "text": "Cetacean Research Program’s analysis efforts to localize false killer whale subgroups from towed hydrophone arrays.\nTo understand movement of false killer whales (FKW) relative to a research vessel by linking visual sightings with towed array acoustic localizations. Evaluating animal movement is important for FKW abundance estimates as movement violates a distance sampling assumption.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#dataset",
-    "href": "index.html#dataset",
-    "title": "Home",
-    "section": "Dataset",
-    "text": "Dataset\nAcoustic Data - Towed hydrophone array using largest spacing possible (Ranging ~25 to 45 m)\n\nVisually confirmed detections of false killer whales (Pseudorca crassidens) collected during survey efforts throughout the Hawaiian Islands in 2017 (DCLDE 2022 dataset; Yano et al. 2018)\nAcoustic only encounters were confirmed with the banter classifier published in McCullough et al. 2021. BANTER_Predict\nEncounters ranged from at few minutes to 2 hours while the ship traveled at 10 knots without turning\nSensitivity analysis manuscript (Barkley et al. in prep) defines what “usable” encounters (events) are and how we validated acoustic encounters of false killer whales that had no visual indentification.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#analysis-steps",
-    "href": "index.html#analysis-steps",
-    "title": "Home",
-    "section": "Analysis Steps",
-    "text": "Analysis Steps\n\nTime-Difference-Of-Arrivals (TDOAs) for all FKW signals were automatically extracted into tracks and then aggregated into continuous TRACES based on consistent TDOA trajectories using a multi-target Bayesian framework. (Custom MATLAB Script, Gruden et al. 2021 & 2023) TDOA_tracking_master\nLocalization of the TRACES was done using modified localization Matlab code from Barkley et al.(2021) by Pina Gruden Localization_Towed_Array.\nEither both (echolocation clicks & whistles), echolocation clicks only, or whistles only were used during analysis to generate complete TRACES\nPerpendicular distance to the trackline was computed at the beam for acoustically-detected TRACES, creating an acoustic detection function.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#project-time",
-    "href": "index.html#project-time",
-    "title": "Home",
-    "section": "Project Time",
-    "text": "Project Time\nToolbox Timeline",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#references",
-    "href": "index.html#references",
-    "title": "Home",
-    "section": "References",
-    "text": "References\nBarkley, Yvonne M., Eva-Marie Nosal, and Erin M. Oleson. 2021. “Model-Based Localization of Deep-Diving Cetaceans Using Towed Line Array Acoustic Data.” The Journal of the Acoustical Society of America 150 (2): 1120.\nBradford AL, Becker E, Oleson EM, Forney K, Moore J, Barlow J. 2020. “Abundance estimates of false killer whales in Hawaiian waters and the broader central pacific,” NOAA Tech Memo NMFS-PIFSC-104\nGruden, Pina, Y. M. Barkley, and J. L. K. McCullough. 2023. “Vocal Behavior of False Killer Whale (Pseudorca Crassidens) Acoustic Subgroups.” Frontiers in Marine Science 10:1147670. https://doi.org/10.3389/fmars.2023.1147670.\nGruden, P., Nosal, E.-M., and Oleson, E. (2021). Tracking time differences of arrivals of multiple sound sources in the presence of clutter and missed detections. J. Acoust. Soc. America 150 (5), 3399–3416. doi: 10.1121/10.0006780\nMcCullough, Jennifer L. K., Anne E. Simonis, Taiki Sakai, and Erin M. Oleson. 2021. “Acoustic Classification of False Killer Whales in the Hawaiian Islands Based on Comprehensive Vocal Repertoire.” JASA Express Letters 1 (7). https://doi.org/10.1121/10.0005512.\nYano KM, Oleson EM, Keating JL, Balance LT, Hill MC, Bradford AL, Allen AN, Joyce TW, Moore JE, Henry A. 2018. “Cetacean and Seabird Data Collected During the Hawaiian Islands Cetacean and Ecosystem Assessment Survey (HICEAS), July-December 2017.” NOAA Tech Memo NMFS-PIFSC-72",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "content/BANTER_Predict.html",
-    "href": "content/BANTER_Predict.html",
-    "title": "BANTER Model Predition Methods",
-    "section": "",
-    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters (events) predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals within each detector available within the event\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz",
-    "crumbs": [
-      "BANTER Predict"
-    ]
-  },
-  {
-    "objectID": "content/BANTER_Predict.html#methods",
-    "href": "content/BANTER_Predict.html#methods",
-    "title": "BANTER Model Predition Methods",
-    "section": "",
-    "text": "Use the BANTER_Predict repository to package acoustic studies for the R package BANTER and conduct predictions using the PC vs OTHER model.\nGenerate event summary plots of encounters (events) predicted on.\nEvaluate using the following criteria each acoustic encounter scored above 50% for PC. (Note: to achieve a 90% or higher classification score of PC there needs to have been at least 10 acoustic signals within all the 8 possible detectors used in the model)\n\n&gt;10 signals within each detector available within the event\nWhistles contours are primarily between 4 & 9 kHz with 0.5 sec duration\nEcholocation signals are primarily between 12 & 22 kHz",
-    "crumbs": [
-      "BANTER Predict"
-    ]
-  },
-  {
-    "objectID": "content/Data_ReadMe.html",
-    "href": "content/Data_ReadMe.html",
-    "title": "Data ReadMe",
-    "section": "",
-    "text": "Filenmae Structure: 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles), Loc_table.csv. Example: 1705279P1_Loc_table.csv (HICEAS17-Lasker AC279 both)\nRows: Localization data for each TRACE.\nColumns:\n\n\n\n\n\n\n\n\nColumn Name\nDescription\nUse for Detection Function\n\n\n\n\nTrackID_1 (1,2,3,etc)\nTrack ID number used for the TRACE\nYES\n\n\nLoc_start_time\nStart time from 1st track in the TRACE sequence (Time adjusted if track started at a bearing angle &lt;30 degrees)\nYES\n\n\nLoc_end_time\nEnd time from last track in the TRACE sequence (Time adjusted if track ended at a bearing angle &gt;120 degrees)\nYES\n\n\nLoc_beam_time\nTime when the TRACE crosses the beam (87 to 93 degrees). NOTE: Localizations that show up with this date time (14-Jul-1916 00:00:00) in the end Loc_table do not have a beam time.\nYES\n\n\nLoc_m_1\nX: Localization estimate in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_2\nY: Localization estimate in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_min_1\nmin of Loc_m_1\n\n\n\nLoc_m_min_2\nmin of Loc_m_2\n\n\n\nLoc_m_max_1\nmax of Loc_m_1\n\n\n\nLoc_m_max_2\nmax of Loc_m_2\n\n\n\nLoc_LatLong_1\nLAT: Localization estimate as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_LatLong_2\nLON: Localization estimate as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_m_dilated_1\nX: Localization estimate from dilated AS in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_dilated_2\nY: Localization estimate from dilated AS in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_dilated_min_1\nmin of Loc_m_dilated_1\n\n\n\nLoc_m_dilated_min_2\nmin of Loc_m_dilated_2\n\n\n\nLoc_m_dilated_max_1\nmax of Loc_m_dilated_1\n\n\n\nLoc_m_dilated_max_2\nmax of Loc_m_dilated_2\n\n\n\nLoc_LatLong_dilated_1\nLAT: Localization estimate from dilated AS as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_LatLong_dilated_2\nLON: Localization estimate from dilated AS as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\ndistance_m\nPerpendicular distance from localization estimate (Loc_m) to the array (meters)\n\n\n\ndistance_m_minmax_1\nmin of distance_m\n\n\n\ndistance_m_minmax_2\nmax of distance_m\n\n\n\ndistance_m_dilated\nPerpendicular distance from localization estimate from dilated AS (Loc_m_dilated) to the array (meters). Currently calibrated for false killer whales (swim speed, etc.)\nYES\n\n\ndistance_m_dilated_minmax_1\nmin of distance_m_dilated\nYES\n\n\ndistance_m_dilated_minmax_2\nmax of distance_m_dilated\nYES",
-    "crumbs": [
-      "Data ReadMe"
-    ]
-  },
-  {
-    "objectID": "content/Data_ReadMe.html#loc_table-csvs",
-    "href": "content/Data_ReadMe.html#loc_table-csvs",
-    "title": "Data ReadMe",
-    "section": "",
-    "text": "Filenmae Structure: 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles), Loc_table.csv. Example: 1705279P1_Loc_table.csv (HICEAS17-Lasker AC279 both)\nRows: Localization data for each TRACE.\nColumns:\n\n\n\n\n\n\n\n\nColumn Name\nDescription\nUse for Detection Function\n\n\n\n\nTrackID_1 (1,2,3,etc)\nTrack ID number used for the TRACE\nYES\n\n\nLoc_start_time\nStart time from 1st track in the TRACE sequence (Time adjusted if track started at a bearing angle &lt;30 degrees)\nYES\n\n\nLoc_end_time\nEnd time from last track in the TRACE sequence (Time adjusted if track ended at a bearing angle &gt;120 degrees)\nYES\n\n\nLoc_beam_time\nTime when the TRACE crosses the beam (87 to 93 degrees). NOTE: Localizations that show up with this date time (14-Jul-1916 00:00:00) in the end Loc_table do not have a beam time.\nYES\n\n\nLoc_m_1\nX: Localization estimate in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_2\nY: Localization estimate in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_min_1\nmin of Loc_m_1\n\n\n\nLoc_m_min_2\nmin of Loc_m_2\n\n\n\nLoc_m_max_1\nmax of Loc_m_1\n\n\n\nLoc_m_max_2\nmax of Loc_m_2\n\n\n\nLoc_LatLong_1\nLAT: Localization estimate as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_LatLong_2\nLON: Localization estimate as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_m_dilated_1\nX: Localization estimate from dilated AS in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_dilated_2\nY: Localization estimate from dilated AS in Cartesian coordinates with respect to start of boat track (meters)\n\n\n\nLoc_m_dilated_min_1\nmin of Loc_m_dilated_1\n\n\n\nLoc_m_dilated_min_2\nmin of Loc_m_dilated_2\n\n\n\nLoc_m_dilated_max_1\nmax of Loc_m_dilated_1\n\n\n\nLoc_m_dilated_max_2\nmax of Loc_m_dilated_2\n\n\n\nLoc_LatLong_dilated_1\nLAT: Localization estimate from dilated AS as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\nLoc_LatLong_dilated_2\nLON: Localization estimate from dilated AS as latitude and longitude (decimal degrees). Note that all animals are plotted on a single side of the trackline.\n\n\n\ndistance_m\nPerpendicular distance from localization estimate (Loc_m) to the array (meters)\n\n\n\ndistance_m_minmax_1\nmin of distance_m\n\n\n\ndistance_m_minmax_2\nmax of distance_m\n\n\n\ndistance_m_dilated\nPerpendicular distance from localization estimate from dilated AS (Loc_m_dilated) to the array (meters). Currently calibrated for false killer whales (swim speed, etc.)\nYES\n\n\ndistance_m_dilated_minmax_1\nmin of distance_m_dilated\nYES\n\n\ndistance_m_dilated_minmax_2\nmax of distance_m_dilated\nYES",
-    "crumbs": [
-      "Data ReadMe"
     ]
   }
 ]
