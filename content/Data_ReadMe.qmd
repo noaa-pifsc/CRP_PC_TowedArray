@@ -4,14 +4,16 @@ title: Data ReadMe
 
 ## Loc_Table CSVs
 
--   **Filenmae Structure:** 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles), Loc_table.csv. Example: 1705279P1_Loc_table.csv (HICEAS17-Lasker AC279 both)
+-   Data located on [Github](https://github.com/noaa-pifsc/CRP_PC_TowedArray/tree/main/data).
+
+-   **Filename Structure:** 4-digit Cruise#, 3-digit acoustic ID#, SignalTypeProcessed (P1=both, P2=clicks, P3=whistles), Loc_table.csv. Example: 1705279P1_Loc_table.csv (HICEAS17-Lasker AC279 both)
 
 -   **Rows:** Localization data for each TRACE.
 
 -   **Columns:**
 
     | Column Name | Description | Use for Detection Function |
-    |----|----|:--:|
+    |------------------------|------------------------|:----------------------:|
     | TrackID_1 (1,2,3,etc) | *Track ID number used for the TRACE* | **YES** |
     | Loc_start_time | *Start time from 1st track in the TRACE sequence (Time adjusted if track started at a bearing angle \<30 degrees)* | **YES** |
     | Loc_end_time | *End time from last track in the TRACE sequence (Time adjusted if track ended at a bearing angle \>120 degrees)* | **YES** |
